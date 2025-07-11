@@ -38,6 +38,11 @@ const testimonials = [
     initials: "GD",
     text: "A clínica é muito agradável, as recepcionistas são muito organizadas. A consulta com a Dra Ana Clara foi ótima, muito atenciosa, explicou tudo com muitos detalhes e embasamento técnico. Foi uma consulta muito boa e agradável!",
   },
+  {
+    name: "Beatriz Moura",
+    initials: "BM",
+    text: "Uma das médicas mais sérias que eu já conheci! Super atenciosa e minuciosa durante todo o atendimento, pratica algo que nao se acha em qualquer consultorio hoje em dia: a escuta e a observação.",
+  },
 ];
 
 export function Testimonials() {
