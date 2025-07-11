@@ -71,6 +71,9 @@ export function About() {
                     <AnimatedDiv animationClass="animate-fade-in-left" delay={200} className="order-1 lg:order-2">
                         <Carousel
                             plugins={[plugin.current]}
+                            opts={{
+                                loop: true,
+                            }}
                             className="w-full max-w-md mx-auto lg:max-w-none"
                             onMouseEnter={plugin.current.stop}
                             onMouseLeave={plugin.current.reset}
