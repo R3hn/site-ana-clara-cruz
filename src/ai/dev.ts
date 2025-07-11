@@ -1,1 +1,5 @@
-// Flows will be imported for their side effects in this file.
+import { config } from 'dotenv';
+config();
+
+import '@/ai/flows/melasma-photo-analysis.ts';
+import '@/ai/flows/melasma-detection.ts';
