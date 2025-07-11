@@ -35,6 +35,7 @@ export function About() {
                 <AnimatedDiv animationClass="animate-fade-in-down" className="text-center mb-16">
                     <h2 className="font-headline text-4xl md:text-5xl font-bold text-accent mb-4">Conheça a Dra. Ana Clara</h2>
                     <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">Dermatologista completa com formação de excelência e atendimento humanizado.</p>
+                     <p className="text-base text-muted-foreground max-w-3xl mx-auto mt-2">CRM-SP 218.598 | RQE 125.917</p>
                 </AnimatedDiv>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20 items-center max-w-6xl mx-auto">
@@ -45,7 +46,6 @@ export function About() {
                                     <p className="text-2xl font-semibold text-primary font-headline">Olá, muito prazer!</p>
                                     
                                     <p><strong>Sou a Dra. Ana Clara Ladeira Cruz, médica dermatologista em São Paulo, capital.</strong></p>
-                                    <p className="text-sm text-muted-foreground !-mt-4">CRM-SP 218.598 | RQE 125.917</p>
 
                                     <p>Minha prática é guiada por um cuidado com propósito: respeitar sua individualidade, valorizar a naturalidade e fortalecer sua autoestima ao longo do tempo, porque a verdadeira beleza não vem em fórmulas prontas!</p>
                                     
