@@ -1,53 +1,71 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { MapPin } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 import { AnimatedDiv } from "./animated-div";
-
-const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
-    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.8 0-67.6-9.5-97.8-26.7l-7-4.1-72.5 19.1 19.4-70.5-4.5-7.3c-18.4-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-  </svg>
-);
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative pt-40 pb-20 md:pt-48 md:pb-24 flex items-center justify-center text-center bg-cream overflow-hidden">
-      <Image
-        src="https://placehold.co/1920x1080.png"
-        alt="Dra. Ana Clara Cruz - Fundo"
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-        priority
-        data-ai-hint="dermatologist portrait"
-        className="z-0"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/10 z-10"></div>
-      
-      <div className="container relative z-20">
-        <div className="max-w-4xl mx-auto">
-           <AnimatedDiv animationClass="animate-fade-in-down" delay={0}>
-              <h1 className="font-headline text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight drop-shadow-xl mb-4">
-                  Dermatologia de excelência para sua pele
+    <section id="inicio" className="relative pt-32 pb-20 md:pt-40 md:pb-24 flex items-center bg-cream overflow-hidden">
+      <div className="container">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          
+          <div className="text-left">
+            <AnimatedDiv animationClass="animate-fade-in-up" delay={0}>
+              <h1 className="font-headline text-5xl md:text-6xl font-medium text-accent leading-tight">
+                Dra. Ana Clara Cruz
               </h1>
-           </AnimatedDiv>
-           <AnimatedDiv animationClass="animate-fade-in-up" delay={200}>
-              <p className="mt-4 text-lg md:text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto drop-shadow-lg">
-                  Cuidados completos com foco na sua saúde, autoestima e beleza natural. Atendimento humanizado e individualizado na Vila Olímpia.
+              <h2 className="font-headline text-4xl md:text-5xl font-medium text-primary leading-tight mt-2 mb-6">
+                Dermatologista Clínica,<br/> Estética e Cirúrgica
+              </h2>
+            </AnimatedDiv>
+            
+            <AnimatedDiv animationClass="animate-fade-in-up" delay={200}>
+              <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-lg">
+                Cuidados da pele com foco na sua saúde, autoestima e beleza natural. Atendimento humanizado na Vila Olímpia.
               </p>
-           </AnimatedDiv>
-           <AnimatedDiv animationClass="animate-fade-in-up" delay={400} className="mt-10">
-              <Button asChild size="lg" className="rounded-full bg-white text-primary hover:bg-white/90 font-bold shadow-2xl transition-transform hover:scale-105 animate-luxury-pulse h-16 px-10 text-lg">
-                  <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
-                      <WhatsAppIcon className="h-6 w-6 mr-3" />
-                      Agendar Consulta
-                  </a>
+            </AnimatedDiv>
+
+            <AnimatedDiv animationClass="animate-fade-in-up" delay={400} className="mt-8">
+              <Button asChild size="lg" className="rounded-full bg-primary hover:bg-primary/90 text-white font-semibold shadow-lg transition-transform hover:scale-105 h-14 px-8 text-base">
+                <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
+                  <Calendar className="h-5 w-5 mr-3" />
+                  Agendar Consulta Dermatológica
+                </a>
               </Button>
-               <div className="mt-6 flex items-center justify-center text-white/90 drop-shadow-md">
-                 <MapPin className="h-5 w-5 mr-2" />
-                 <span className="font-medium">Clínica Sense - Vila Olímpia, São Paulo - SP</span>
-               </div>
-           </AnimatedDiv>
+              <div className="mt-6 flex items-center text-muted-foreground">
+                <MapPin className="h-5 w-5 mr-2 text-primary" />
+                <span className="font-medium">Clínica Sense - Vila Olímpia, São Paulo - SP</span>
+              </div>
+            </AnimatedDiv>
+          </div>
+
+          <div className="relative hidden md:flex items-center justify-center h-full">
+            <AnimatedDiv animationClass="animate-luxury-zoom" delay={300} className="relative w-[450px] h-[450px]">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-48 bg-white/60 rounded-full filter blur-xl opacity-80"></div>
+                <div className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-80 h-80 bg-white/70 rounded-full filter blur-2xl opacity-90"></div>
+                
+                <Image
+                  src="https://placehold.co/400x500.png"
+                  alt="Dra. Ana Clara Cruz"
+                  width={400}
+                  height={500}
+                  quality={95}
+                  priority
+                  data-ai-hint="dermatologist portrait"
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 rounded-[50%] object-cover w-[320px] h-[400px] shadow-2xl"
+                  style={{
+                    maskImage: 'radial-gradient(circle at center, white 70%, transparent 100%)',
+                  }}
+                />
+
+                <div className="absolute bottom-0 right-0 z-20 bg-white/50 backdrop-blur-sm p-4 rounded-2xl shadow-lg w-64">
+                    <p className="font-bold text-accent text-lg">Dra. Ana Clara Cruz</p>
+                    <p className="text-muted-foreground text-sm">Dermatologista CRM-SP 123456</p>
+                    <p className="text-muted-foreground text-sm font-medium">Especialista em Melasma</p>
+                </div>
+            </AnimatedDiv>
+          </div>
+
         </div>
       </div>
     </section>
