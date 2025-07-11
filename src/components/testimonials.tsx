@@ -58,6 +58,11 @@ const testimonials = [
     initials: "DD",
     text: "Conheço a Dra. Ana Clara e o seu trabalho há tempos e me sinto totalmente segura em ser sua paciente, pois ela me dá toda atenção necessária para fazer um diagnóstico preciso e correto. Na consulta ela examina cada detalhe do meu corpo e me ouve, o que para mim isto é muito importante. Quando conversa e explica, usa uma linguagem que é bem compreensiva, não deixando dúvidas. Adoro seu trabalho e já à recomendei para minhas amigas, que ficaram muito satisfeitas.",
   },
+  {
+    name: "Tainah Paula Franghieru",
+    initials: "TP",
+    text: "Fui muito bem atendida pela Dra. Ana, que me explicou detalhamente todas as etapas do meu tratamento. Além disso, o atendimento foi pontual.",
+  },
 ];
 
 export function Testimonials() {
