@@ -8,20 +8,20 @@ import { AnimatedDiv } from "./animated-div";
 
 const faqItems = [
     {
-        question: "Quais problemas de pele a Dra. Ana Clara trata?",
-        answer: "Atuo nas três áreas da dermatologia: clínica (acne, manchas, melasma, rosácea, dermatites), estética (rejuvenescimento, preenchimentos, toxina botulínica) e cirúrgica (pequenas cirurgias e biópsias)."
+        question: "Como saber qual procedimento é indicado para mim?",
+        answer: "O melhor procedimento é sempre aquele que atende às suas necessidades e respeita sua individualidade. Na primeira consulta, fazemos uma avaliação completa da sua pele, discutimos suas queixas e objetivos, e só então montamos um plano de tratamento personalizado, explicando cada opção em detalhes."
     },
     {
-        question: "As consultas são apenas presenciais?",
-        answer: "A primeira consulta sempre é presencial para uma avaliação completa da pele. Atendo na Clínica Sense, na Vila Olímpia. Consultas de retorno e acompanhamento podem ser feitas online quando apropriado."
+        question: "O que está incluído na primeira consulta dermatológica?",
+        answer: "A primeira consulta inclui uma conversa detalhada (anamnese) para entender seu histórico e estilo de vida, um exame físico completo da pele do corpo todo (dermatoscopia) para avaliar pintas e lesões, o diagnóstico e a elaboração de um plano de cuidados personalizado e individual."
     },
     {
-        question: "Como funciona o tratamento personalizado?",
-        answer: "Cada pessoa tem necessidades únicas. Após a avaliação, crio um plano específico que pode incluir cuidados domiciliares, procedimentos em consultório ou combinação de tratamentos, sempre respeitando seu perfil e estilo de vida."
+        question: "A clínica atende por convênios médicos?",
+        answer: "O atendimento é particular. No entanto, fornecemos toda a documentação necessária (recibo, nota fiscal) para que você possa solicitar o reembolso junto ao seu plano de saúde, conforme as condições da sua apólice."
     },
     {
-        question: "Qual o valor da consulta?",
-        answer: "Os valores são informados diretamente pelo WhatsApp, pois podem variar conforme o tipo de consulta e procedimentos. Entre em contato para receber todas as informações!"
+        question: "A Dra. tira pintas ou sinais? Como funciona o check-up?",
+        answer: "Sim, a remoção de pintas (nevos), sinais e outras lesões de pele é um dos procedimentos realizados, tanto por razões estéticas quanto de saúde. O check-up, ou dermatoscopia, é um exame onde avaliamos todas as pintas com um aparelho especial que amplia a imagem, permitindo a detecção precoce de qualquer alteração suspeita."
     }
 ];
 
