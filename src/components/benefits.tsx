@@ -1,4 +1,4 @@
-import { Award, GraduationCap, Leaf, Sparkles, Stethoscope } from "lucide-react";
+import { Award, GraduationCap, Leaf, MessageCircle, Sparkles, Stethoscope } from "lucide-react";
 import { Button } from "./ui/button";
 import { AnimatedDiv } from "./animated-div";
 
@@ -40,7 +40,7 @@ const benefitItems = [
         icon: <Leaf className="h-5 w-5" />,
         tag: "Resultados Naturais",
         sideCard: {
-            icon: <Stethoscope className="h-12 w-12 text-primary mb-6 animate-gentle-float"/>,
+            icon: <MessageCircle className="h-12 w-12 text-primary mb-6 animate-gentle-float"/>,
             title: "Escuta Ativa",
             description: "Atendimento humanizado com acolhimento e comunicação clara em cada consulta."
         }
