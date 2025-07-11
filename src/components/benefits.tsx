@@ -1,4 +1,4 @@
-import { Award, GraduationCap, Leaf, MessageCircle, Sparkles, Stethoscope } from "lucide-react";
+import { Award, GraduationCap, Leaf, MessageCircle, Sparkles, Stethoscope, Heart } from "lucide-react";
 import { Button } from "./ui/button";
 import { AnimatedDiv } from "./animated-div";
 
@@ -95,7 +95,7 @@ export function Benefits() {
                             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary-light/10"></div>
                             <div className="absolute inset-0 texture-dots opacity-[0.03]"></div>
                             <div className="relative z-10">
-                                <Stethoscope className="h-12 w-12 text-primary mx-auto mb-6"/>
+                                <Heart className="h-12 w-12 text-primary mx-auto mb-6"/>
                                 <h3 className="text-3xl font-bold mb-6 font-headline text-accent">Sua pele merece o melhor cuidado</h3>
                                 <p className="text-lg mb-8 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                                     Cuide da sua saúde e autoestima com tratamentos dermatológicos de excelência em um ambiente acolhedor e sofisticado.
