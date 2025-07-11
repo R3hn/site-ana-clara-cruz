@@ -43,6 +43,11 @@ const testimonials = [
     initials: "BM",
     text: "Uma das médicas mais sérias que eu já conheci! Super atenciosa e minuciosa durante todo o atendimento, pratica algo que nao se acha em qualquer consultorio hoje em dia: a escuta e a observação.",
   },
+  {
+    name: "Ana Luisa de Carvalho",
+    initials: "AL",
+    text: "Muito atenciosa, senti que realmente passa bem pro paciente o conhecimento tecnico de uma forma acessível. Também me senti muito confortável e acolhida com ela, o que não é fácil de encontrar com muitos médicos. Super precisa nos procedimentos, adorei os resultados. Com certeza recomendaria!!",
+  },
 ];
 
 export function Testimonials() {
@@ -58,7 +63,7 @@ export function Testimonials() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <AnimatedDiv
-              key={testimonial.name}
+              key={testimonial.name + index}
               animationClass="animate-fade-in-up"
               delay={index * 150 + 200}
             >
