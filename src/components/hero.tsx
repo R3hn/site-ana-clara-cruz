@@ -42,7 +42,7 @@ export function Hero() {
                  <div className="text-left">
                     <AnimatedDiv animationClass="animate-fade-in-up" delay={0}>
                       <h1 className="font-headline text-5xl md:text-6xl font-medium leading-tight text-white">
-                        Dra. Ana Clara<br />Cruz
+                        Dra. Ana<br className="md:hidden" /> Clara Cruz
                       </h1>
                       <h2 className="font-headline text-4xl md:text-5xl font-medium text-primary-soft leading-tight mt-2 mb-6">
                         Dermatologia Clínica,<br/> Estética e Cirúrgica
