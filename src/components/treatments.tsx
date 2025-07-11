@@ -11,7 +11,7 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const aestheticTreatments = [
-    { title: "Aplicação Estética de Toxina", description: "Suavização de rugas e tratamento de condições como hiperidrose e bruxismo.", icon: <Bot className="h-6 w-6"/> },
+    { title: "Aplicação de Toxina Botulínica", description: "Suavização de rugas e tratamento de condições como hiperidrose e bruxismo.", icon: <Bot className="h-6 w-6"/> },
     { title: "Preenchimento com Ácido Hialurônico", description: "Restauração de volume, contorno facial e hidratação profunda da pele.", icon: <Syringe className="h-6 w-6"/> },
     { title: "Bioestimuladores de Colágeno", description: "Estímulo da produção natural de colágeno para uma pele mais firme e rejuvenescida.", icon: <Sparkles className="h-6 w-6"/> },
     { title: "Fios de PDO (lisos)", description: "Melhora da textura e firmeza da pele em áreas delicadas como pálpebras e glabela.", icon: <Dna className="h-6 w-6"/> },
