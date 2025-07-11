@@ -15,10 +15,10 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const carouselImages = [
-    { src: "/foto1.jpg", alt: "Retrato da Dra. Ana Clara Cruz", hint: "professional portrait" },
-    { src: "/foto2.jpg", alt: "Dra. Ana Clara Cruz em seu consultório", hint: "doctor office" },
     { src: "/procedimento1.jpg", alt: "Dra. Ana Clara Cruz realizando procedimento dermatológico", hint: "dermatologist procedure" },
+    { src: "/foto1.jpg", alt: "Retrato da Dra. Ana Clara Cruz", hint: "professional portrait" },
     { src: "/procedimento2.jpg", alt: "Detalhe de um procedimento estético sendo realizado", hint: "aesthetic procedure" },
+    { src: "/foto2.jpg", alt: "Dra. Ana Clara Cruz em seu consultório", hint: "doctor office" },
     { src: "/procedimento3.jpg", alt: "Paciente recebendo tratamento dermatológico", hint: "patient treatment" },
 ];
 
@@ -83,6 +83,7 @@ export function About() {
                                                                     width={400}
                                                                     height={500}
                                                                     className="object-cover w-full h-full"
+                                                                    data-ai-hint={img.hint}
                                                                 />
                                                             </CardContent>
                                                         </Card>
