@@ -55,24 +55,27 @@ export function Header() {
     >
       <div className="container">
         <div className="flex items-center justify-between py-4">
-          <Link href="#inicio" className="flex items-center">
-            <img 
-              src="/logo.png" 
-              alt="Logo Dra. Ana Clara Cruz"
-              style={{ width: '180px', height: 'auto' }}
-            />
-          </Link>
-          <nav className="hidden md:flex items-center space-x-1">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="nav-link px-3 py-2 text-sm font-medium text-foreground transition-colors hover:text-primary hover:bg-primary/10 rounded-md"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
+          <div className="flex items-center space-x-6">
+            <Link href="#inicio" className="flex items-center">
+              <img 
+                src="/logo.png" 
+                alt="Logo Dra. Ana Clara Cruz"
+                style={{ width: '180px', height: 'auto' }}
+              />
+            </Link>
+            <nav className="hidden md:flex items-center space-x-1">
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="nav-link px-3 py-2 text-sm font-medium text-foreground transition-colors hover:text-primary hover:bg-primary/10 rounded-md"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+
            <div className="hidden md:block">
              <Button asChild className="rounded-full bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
                 <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
