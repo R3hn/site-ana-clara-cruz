@@ -90,12 +90,12 @@ export function Benefits() {
                         </div>
                     ))}
                     
-                    <AnimatedDiv animationClass="animate-scale-in" delay={400} className="text-center">
+                    <AnimatedDiv animationClass="animate-scale-in" delay={400} className="text-center group">
                         <div className="bg-white rounded-3xl p-12 shadow-2xl relative overflow-hidden border-2 border-primary/20 transition-transform duration-300 hover:-translate-y-2">
                             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary-light/10"></div>
                             <div className="absolute inset-0 texture-dots opacity-[0.03]"></div>
                             <div className="relative z-10">
-                                <Heart className="h-12 w-12 text-primary mx-auto mb-6" fill="hsl(var(--primary))"/>
+                                <Heart className="h-12 w-12 text-primary mx-auto mb-6 transition-transform duration-300 group-hover:scale-110 group-hover:animate-pulse" fill="hsl(var(--primary))"/>
                                 <h3 className="text-3xl font-bold mb-6 font-headline text-accent">Sua pele merece o melhor cuidado</h3>
                                 <p className="text-lg mb-8 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                                     Cuide da sua saúde e autoestima com tratamentos dermatológicos de excelência em um ambiente acolhedor e sofisticado.
