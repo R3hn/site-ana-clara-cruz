@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin } from "lucide-react";
 import { AnimatedDiv } from "./animated-div";
@@ -10,14 +9,10 @@ export function Hero() {
       className="relative flex items-center overflow-hidden bg-cover bg-center bg-no-repeat pt-32 pb-20 md:pt-40 md:pb-24"
     >
       <div className="absolute inset-0 z-0">
-        <Image
+        <img
           src="/foto.png"
           alt="Dra. Ana Clara Cruz em seu consultório"
-          layout="fill"
-          objectFit="cover"
-          quality={80}
-          priority
-          className="opacity-20"
+          className="object-cover w-full h-full opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/80 to-transparent"></div>
       </div>
