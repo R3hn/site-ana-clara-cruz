@@ -7,9 +7,9 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative w-full overflow-hidden bg-background pt-40 pb-24 md:pt-48 md:pb-32"
+      className="relative w-full overflow-hidden bg-background pt-48 pb-32"
     >
-      <div className="absolute inset-0 z-0 opacity-20 md:opacity-100">
+      <div className="absolute inset-0 z-0">
         <Image
           src="/foto.jpg"
           alt="Consultório da Dra. Ana Clara Cruz"
@@ -18,7 +18,7 @@ export function Hero() {
           style={{ objectPosition: 'top' }}
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent md:bg-gradient-to-r md:from-background md:via-background/70 md:to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent md:bg-gradient-to-r md:from-background md:from-30% md:to-transparent"></div>
       </div>
       
       <div className="container relative z-10">
