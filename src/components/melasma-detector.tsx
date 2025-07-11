@@ -63,14 +63,14 @@ export function MelasmaDetector() {
   return (
     <section id="detector" className="section-padding bg-white">
       <div className="container">
-        <AnimatedDiv animationClass="animate-in fade-in-down" className="text-center mb-16">
+        <AnimatedDiv animationClass="animate-fade-in-down" className="text-center mb-16">
           <h2 className="font-headline text-4xl md:text-5xl font-bold text-accent mb-4">Analisador de Pele com IA</h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             Receba uma análise preliminar da sua pele. Envie uma foto e nossa IA ajudará a identificar sinais de melasma.
           </p>
         </AnimatedDiv>
 
-        <AnimatedDiv animationClass="animate-in zoom-in-95" delay={200}>
+        <AnimatedDiv animationClass="animate-scale-in" delay={200}>
             <Card className="max-w-4xl mx-auto shadow-2xl rounded-3xl overflow-hidden border-primary/10">
                 <div className="grid md:grid-cols-2">
                     <div className="p-8">

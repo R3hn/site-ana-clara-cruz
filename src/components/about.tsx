@@ -13,12 +13,12 @@ export function About() {
         <section id="sobre" className="section-padding bg-secondary relative overflow-hidden">
             <div className="absolute inset-0 texture-grid animate-morphing-blur"></div>
             <div className="container relative">
-                <AnimatedDiv animationClass="animate-in fade-in-down" className="text-center mb-16">
+                <AnimatedDiv animationClass="animate-fade-in-down" className="text-center mb-16">
                     <h2 className="font-headline text-4xl md:text-5xl font-bold text-accent mb-4">Conheça a Dra. Ana Clara</h2>
                     <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">Dermatologista completa com formação de excelência e atendimento humanizado.</p>
                 </AnimatedDiv>
 
-                <AnimatedDiv animationClass="animate-in fade-in-up" delay={200}>
+                <AnimatedDiv animationClass="animate-fade-in-up" delay={200}>
                     <Card className="max-w-5xl mx-auto shadow-2xl rounded-3xl p-8 md:p-12 relative overflow-hidden border-primary/10">
                         <CardContent className="p-0">
                             <div className="text-base md:text-lg leading-relaxed text-foreground space-y-6 relative z-10">

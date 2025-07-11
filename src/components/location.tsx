@@ -102,7 +102,7 @@ export function Location() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-5xl mx-auto">
                     {infoCards.map((card, index) => (
-                        <AnimatedDiv key={index} animationClass="animate-fade-in-up" delay={index * 150 + 400}>
+                        <AnimatedDiv key={index} animationClass="animate-fade-in-up" delay={index * 150 + 600}>
                             <Card className="h-full bg-white rounded-2xl p-6 shadow-lg border-primary/10 text-center transition-transform duration-300 hover:-translate-y-2">
                                 <CardContent className="p-0">
                                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 animate-gentle-float">

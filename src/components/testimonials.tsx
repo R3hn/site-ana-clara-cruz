@@ -24,7 +24,7 @@ export function Testimonials() {
   return (
     <section id="depoimentos" className="section-padding bg-cream">
       <div className="container">
-        <AnimatedDiv animationClass="animate-in fade-in-down" className="text-center mb-16">
+        <AnimatedDiv animationClass="animate-fade-in-down" className="text-center mb-16">
           <h2 className="font-headline text-4xl md:text-5xl font-bold text-accent mb-4">O que dizem minhas pacientes</h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             Histórias reais de transformação e recuperação da autoestima.
@@ -34,9 +34,8 @@ export function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <AnimatedDiv
               key={testimonial.name}
-              animationClass="animate-in fade-in-up"
-              delay={index * 150}
-              className="md:last:col-span-2 lg:last:col-span-1"
+              animationClass="animate-fade-in-up"
+              delay={index * 150 + 200}
             >
               <Card className="h-full rounded-2xl shadow-lg border-l-4 border-primary transition-transform duration-300 hover:-translate-y-2">
                 <CardContent className="p-8">

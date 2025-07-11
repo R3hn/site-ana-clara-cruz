@@ -35,7 +35,7 @@ export function Process() {
                 <div className="absolute bottom-1/4 right-10 w-32 h-32 bg-accent/5 rounded-full animate-float animation-delay-[2s]"></div>
             </div>
             <div className="container relative">
-                <AnimatedDiv animationClass="animate-in fade-in-down" className="text-center mb-16">
+                <AnimatedDiv animationClass="animate-fade-in-down" className="text-center mb-16">
                     <h2 className="font-headline text-4xl md:text-5xl font-bold text-accent mb-4">Como funciona o atendimento</h2>
                     <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                         Um processo cuidadoso e personalizado do primeiro contato aos resultados.
@@ -43,7 +43,7 @@ export function Process() {
                 </AnimatedDiv>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
                     {steps.map((item, index) => (
-                        <AnimatedDiv key={item.step} animationClass="animate-in fade-in-up" delay={index * 150} className="text-center">
+                        <AnimatedDiv key={item.step} animationClass="animate-fade-in-up" delay={index * 150 + 200} className="text-center">
                             <div className="step-number bg-gradient-to-br from-primary to-primary-light text-white w-16 h-16 rounded-full flex items-center justify-center font-bold text-2xl mx-auto mb-6 shadow-lg">
                                 {item.step}
                             </div>
@@ -52,7 +52,7 @@ export function Process() {
                         </AnimatedDiv>
                     ))}
                 </div>
-                <AnimatedDiv animationClass="animate-in zoom-in-95" delay={400}>
+                <AnimatedDiv animationClass="animate-scale-in" delay={600}>
                     <Card className="text-center max-w-4xl mx-auto p-8 md:p-12 rounded-3xl shadow-lg relative overflow-hidden">
                         <CardContent className="p-0 relative z-10">
                             <p className="text-2xl md:text-3xl font-semibold text-primary mb-8 font-headline">

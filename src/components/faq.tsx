@@ -29,13 +29,13 @@ export function Faq() {
     return (
         <section id="duvidas" className="section-padding bg-cream">
             <div className="container">
-                <AnimatedDiv animationClass="animate-in fade-in-down" className="text-center mb-16">
+                <AnimatedDiv animationClass="animate-fade-in-down" className="text-center mb-16">
                     <h2 className="font-headline text-4xl md:text-5xl font-bold text-accent mb-4">Perguntas frequentes</h2>
                     <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                         Tire suas principais dúvidas sobre o atendimento dermatológico.
                     </p>
                 </AnimatedDiv>
-                <AnimatedDiv animationClass="animate-in fade-in-up" delay={200}>
+                <AnimatedDiv animationClass="animate-fade-in-up" delay={200}>
                     <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden border border-primary/10">
                         <Accordion type="single" collapsible className="w-full">
                             {faqItems.map((item, index) => (

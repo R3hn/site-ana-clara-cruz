@@ -13,7 +13,7 @@ export function Cta() {
     return(
         <section className="section-padding bg-gradient-to-br from-accent to-primary">
             <div className="container text-center">
-                <AnimatedDiv animationClass="animate-in fade-in-up" className="max-w-4xl mx-auto">
+                <AnimatedDiv animationClass="animate-fade-in-up" className="max-w-4xl mx-auto">
                     <h2 className="text-4xl lg:text-5xl font-bold font-headline text-white mb-8">
                         Pronta para cuidar da sua pele com excelência?
                     </h2>
