@@ -33,6 +33,11 @@ const testimonials = [
     initials: "GK",
     text: "A Dra Ana Clara é ótima! A consulta é completa, examina o corpo todo, pergunta todo seu histórico. Se preocupa com todos os detalhes e tem amplo conhecimento de medicações, interações medicamentosas, estudos e pesquisas. É super ética e profissional, explicando todos os detalhes. Super indico e voltarei mais vezes.",
   },
+  {
+    name: "Giovanna De Luca",
+    initials: "GD",
+    text: "A clínica é muito agradável, as recepcionistas são muito organizadas. A consulta com a Dra Ana Clara foi ótima, muito atenciosa, explicou tudo com muitos detalhes e embasamento técnico. Foi uma consulta muito boa e agradável!",
+  },
 ];
 
 export function Testimonials() {
