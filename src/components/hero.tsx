@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex items-center w-full min-h-[85vh] md:min-h-screen overflow-hidden bg-background md:pt-56 md:pb-24"
+      className="relative flex items-center w-full min-h-[85vh] md:min-h-screen overflow-hidden bg-background"
     >
       {/* Desktop Image Background */}
       <div className="absolute inset-0 z-0 hidden md:block">
@@ -38,11 +38,11 @@ export function Hero() {
               data-ai-hint="doctor portrait"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 w-full p-8 text-white">
+            <div className="absolute bottom-12 left-0 w-full p-8 text-white">
                  <div className="text-left">
                     <AnimatedDiv animationClass="animate-fade-in-up" delay={0}>
                       <h1 className="font-headline text-5xl md:text-6xl font-medium leading-tight text-white">
-                        Dra. Ana<br />Clara Cruz
+                        Dra. Ana<br className="md:hidden" /> Clara Cruz
                       </h1>
                       <h2 className="font-headline text-4xl md:text-5xl font-medium text-primary-soft leading-tight mt-2 mb-6">
                         Dermatologia Clínica,<br/> Estética e Cirúrgica
