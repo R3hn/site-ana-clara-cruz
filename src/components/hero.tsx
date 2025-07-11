@@ -11,7 +11,7 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center text-white text-center">
+    <section id="inicio" className="relative pt-40 pb-20 md:pt-48 md:pb-24 flex items-center justify-center text-center bg-cream overflow-hidden">
       <Image
         src="https://placehold.co/1920x1080.png"
         alt="Dra. Ana Clara Cruz - Fundo"
@@ -22,32 +22,33 @@ export function Hero() {
         data-ai-hint="dermatologist portrait"
         className="z-0"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/10 z-10"></div>
       
-      <div className="container relative z-20 pt-20 pb-16 md:pt-0 md:pb-0">
-        <AnimatedDiv animationClass="animate-fade-in-up" className="max-w-4xl mx-auto">
-          <h1 className="font-headline text-4xl md:text-5xl lg:text-7xl font-semibold text-white leading-tight drop-shadow-xl">
-            Dra. Ana Clara Cruz
-          </h1>
-          <p className="mt-4 font-body text-xl md:text-2xl lg:text-3xl text-white/90 drop-shadow-lg font-light">
-            Dermatologista Clínica, Estética e Cirúrgica
-          </p>
-          <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
-            Cuidados dermatológicos completos com foco na sua saúde, autoestima e beleza natural. Atendimento humanizado na Vila Olímpia.
-          </p>
-        </AnimatedDiv>
-        <AnimatedDiv animationClass="animate-fade-in-up" delay={200} className="mt-10">
-          <Button asChild size="lg" className="rounded-full bg-white text-primary hover:bg-white/90 font-bold shadow-2xl transition-transform hover:scale-105 animate-luxury-pulse h-16 px-10 text-lg">
-            <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
-              <WhatsAppIcon className="h-6 w-6 mr-3" />
-              Agendar Consulta
-            </a>
-          </Button>
-          <div className="mt-6 flex items-center justify-center text-white/90 drop-shadow-md">
-            <MapPin className="h-5 w-5 mr-2" />
-            <span className="font-medium">Clínica Sense - Vila Olímpia, São Paulo - SP</span>
-          </div>
-        </AnimatedDiv>
+      <div className="container relative z-20">
+        <div className="max-w-4xl mx-auto">
+           <AnimatedDiv animationClass="animate-fade-in-down" delay={0}>
+              <h1 className="font-headline text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight drop-shadow-xl mb-4">
+                  Dermatologia de excelência para sua pele
+              </h1>
+           </AnimatedDiv>
+           <AnimatedDiv animationClass="animate-fade-in-up" delay={200}>
+              <p className="mt-4 text-lg md:text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto drop-shadow-lg">
+                  Cuidados completos com foco na sua saúde, autoestima e beleza natural. Atendimento humanizado e individualizado na Vila Olímpia.
+              </p>
+           </AnimatedDiv>
+           <AnimatedDiv animationClass="animate-fade-in-up" delay={400} className="mt-10">
+              <Button asChild size="lg" className="rounded-full bg-white text-primary hover:bg-white/90 font-bold shadow-2xl transition-transform hover:scale-105 animate-luxury-pulse h-16 px-10 text-lg">
+                  <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
+                      <WhatsAppIcon className="h-6 w-6 mr-3" />
+                      Agendar Consulta
+                  </a>
+              </Button>
+               <div className="mt-6 flex items-center justify-center text-white/90 drop-shadow-md">
+                 <MapPin className="h-5 w-5 mr-2" />
+                 <span className="font-medium">Clínica Sense - Vila Olímpia, São Paulo - SP</span>
+               </div>
+           </AnimatedDiv>
+        </div>
       </div>
     </section>
   );
