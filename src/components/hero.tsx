@@ -42,7 +42,7 @@ export function Hero() {
             </AnimatedDiv>
 
             <AnimatedDiv animationClass="animate-fade-in-up" delay={400} className="mt-8">
-              <Button asChild size="lg" className="rounded-full bg-primary hover:bg-primary/90 text-white font-semibold shadow-lg transition-transform hover:scale-105 h-14 px-8 text-base">
+              <Button asChild size="lg" className="rounded-full bg-primary hover:bg-primary-light text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl h-14 px-8 text-base">
                 <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
                   <Calendar className="h-5 w-5 mr-3" />
                   Agendar Consulta Dermatológica

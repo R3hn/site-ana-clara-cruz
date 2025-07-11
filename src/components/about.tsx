@@ -36,7 +36,7 @@ export function About() {
                             </div>
                             
                             <div className="text-center mt-12">
-                                <Button asChild size="lg" className="rounded-full h-14 px-8 text-base bg-gradient-to-r from-primary to-primary-light text-white font-medium shadow-lg transition-transform hover:scale-105 animate-luxury-pulse">
+                                <Button asChild size="lg" className="rounded-full h-14 px-8 text-base bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-luxury-pulse">
                                     <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
                                         <WhatsAppIcon className="h-5 w-5 mr-3" />
                                         Quero conversar com a Dra. Ana Clara

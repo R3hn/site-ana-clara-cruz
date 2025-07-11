@@ -67,7 +67,7 @@ export function Header() {
             ))}
           </nav>
            <div className="hidden md:block">
-             <Button asChild className="rounded-full bg-gradient-to-r from-primary to-primary-light text-white font-medium shadow-lg transition-transform hover:scale-105">
+             <Button asChild className="rounded-full bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
                 <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
                     <WhatsAppIcon className="h-4 w-4 mr-2" />
                     Agendar Consulta
@@ -99,7 +99,7 @@ export function Header() {
                   {link.label}
                 </a>
               ))}
-              <Button asChild className="mt-4 self-start rounded-full bg-gradient-to-r from-primary to-primary-light text-white font-medium shadow-lg transition-transform hover:scale-105">
+              <Button asChild className="mt-4 self-start rounded-full bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
                  <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
                     <WhatsAppIcon className="h-4 w-4 mr-2" />
                     Agendar Consulta

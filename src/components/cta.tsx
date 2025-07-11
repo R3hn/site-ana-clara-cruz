@@ -22,7 +22,7 @@ export function Cta() {
                         Agende sua consulta dermatológica e dê o primeiro passo para uma pele mais saudável e bonita.
                     </p>
                     
-                    <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100 px-10 py-8 rounded-full font-bold text-lg mb-12 transition-all shadow-lg hover:shadow-xl h-auto">
+                    <Button asChild size="lg" className="bg-white text-primary hover:bg-cream px-10 py-8 rounded-full font-bold text-lg mb-12 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 h-auto">
                         <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
                             <WhatsAppIcon className="h-6 w-6 mr-3"/>
                             Quero agendar minha consulta

@@ -101,7 +101,7 @@ export function Benefits() {
                                 <p className="text-lg mb-8 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                                     Cuide da sua saúde e autoestima com tratamentos dermatológicos de excelência em um ambiente acolhedor e sofisticado.
                                 </p>
-                                <Button asChild size="lg" className="rounded-full text-base bg-white text-accent border-2 border-primary h-14 px-8 shadow-lg animate-luxury-pulse transition-all hover:bg-primary/10">
+                                <Button asChild size="lg" className="rounded-full text-base bg-white text-accent border-2 border-primary hover:border-primary/50 h-14 px-8 shadow-lg animate-luxury-pulse transition-all hover:bg-primary/10 hover:shadow-xl">
                                     <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
                                         <WhatsAppIcon className="h-5 w-5 mr-3" />
                                         Quero agendar minha consulta
