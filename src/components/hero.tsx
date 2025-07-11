@@ -9,7 +9,7 @@ export function Hero() {
       className="relative flex items-center overflow-hidden bg-cover bg-center bg-no-repeat pt-32 pb-20 md:pt-40 md:pb-24"
       style={{ backgroundImage: "url('/foto.jpg')" }}
     >
-      <div className="absolute inset-0 z-10 bg-gradient-to-r from-background from-50% via-background/70 via-[55%] to-transparent to-70%"></div>
+      <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-background/90 from-20% via-background/40 via-50% to-transparent to-70%"></div>
       
       <div className="container relative z-20">
         <div className="grid grid-cols-1">
