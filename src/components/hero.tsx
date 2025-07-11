@@ -9,8 +9,8 @@ export function Hero() {
       className="relative flex items-center overflow-hidden bg-cover bg-center bg-no-repeat pt-32 pb-20 md:pt-40 md:pb-24"
       style={{ backgroundImage: "url('/foto.jpg')" }}
     >
-      <div className="absolute inset-0 z-0 bg-black/50"></div>
-      <div className="absolute inset-0 z-10 bg-gradient-to-t from-cream via-cream/80 to-transparent"></div>
+      <div className="absolute inset-0 z-0 bg-black/30"></div>
+      <div className="absolute inset-0 z-10 bg-gradient-to-t from-cream via-cream/70 to-transparent"></div>
       
       <div className="container relative z-20">
         <div className="grid grid-cols-1">
