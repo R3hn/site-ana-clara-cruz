@@ -23,7 +23,7 @@ const aestheticTreatments = [
 ];
 
 const surgicalTreatments = [
-    { title: "Cirurgias de Câncer de Pele", description: "Remoção segura e especializada de lesões malignas com foco na saúde e estética.", icon: <Scissors className="h-6 w-6"/> },
+    { title: "Cirurgias de Câncer de Pele", description: "Remoção segura e especializada de lesões malignas com foco na saúde e estética.", icon: <ShieldCheck className="h-6 w-6"/> },
     { title: "Pequenas Cirurgias", description: "Extração de cistos, lipomas e outras lesões benignas com técnica apurada.", icon: <Scissors className="h-6 w-6"/> },
     { title: "Biópsias de Pele", description: "Coleta de amostras para análise patológica, essencial para um diagnóstico preciso.", icon: <Microscope className="h-6 w-6"/> },
 ];
