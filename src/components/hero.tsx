@@ -17,8 +17,9 @@ export function Hero() {
           className="object-cover"
           style={{ objectPosition: 'top' }}
           priority
+          quality={100}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent md:bg-gradient-to-r md:from-background md:from-30% md:to-transparent md:to-50%"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent md:bg-gradient-to-r md:from-background md:from-30% md:to-50%"></div>
       </div>
       
       <div className="container relative z-10">
