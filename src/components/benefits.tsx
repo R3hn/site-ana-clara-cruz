@@ -1,3 +1,4 @@
+
 import { Award, GraduationCap, Heart, Leaf, Stethoscope } from "lucide-react";
 import { Button } from "./ui/button";
 import { AnimatedDiv } from "./animated-div";
@@ -14,7 +15,7 @@ const benefitItems = [
         title: "Formação de Excelência",
         description: "Graduada pela UNICAMP e com residência em Dermatologia pela UNIFESP. Membro titular da Sociedade Brasileira de Dermatologia.",
         icon: <GraduationCap className="h-5 w-5" />,
-        tag: "UNICAMP + UNIFESP + SBD",
+        tag: "UNICAMP • UNIFESP • SBD",
         sideCard: {
             icon: <Award className="h-12 w-12 text-primary mb-6 animate-gentle-float"/>,
             title: "Excelência Reconhecida",
@@ -26,7 +27,7 @@ const benefitItems = [
         title: "Atendimento Completo",
         description: "Dermatologia clínica, estética e cirúrgica em um só lugar. Tratamentos personalizados para cada necessidade e perfil.",
         icon: <Stethoscope className="h-5 w-5" />,
-        tag: "Clínica + Estética + Cirúrgica",
+        tag: "Clínica • Estética • Cirúrgica",
         sideCard: {
             icon: <Heart className="h-12 w-12 text-primary mb-6 animate-gentle-float"/>,
             title: "Cuidado Integral",
