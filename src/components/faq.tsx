@@ -22,6 +22,22 @@ const faqItems = [
     {
         question: "A Dra. tira pintas ou sinais? Como funciona o check-up?",
         answer: "Sim, a remoção de pintas (nevos), sinais e outras lesões de pele é um dos procedimentos realizados, tanto por razões estéticas quanto de saúde. O check-up, ou dermatoscopia, é um exame onde avaliamos todas as pintas com um aparelho especial que amplia a imagem, permitindo a detecção precoce de qualquer alteração suspeita."
+    },
+    {
+        question: "A toxina botulínica (Botox) deixa o rosto paralisado?",
+        answer: "Não. Quando aplicada por um profissional qualificado, a toxina botulínica relaxa a musculatura de forma controlada, suavizando as rugas de expressão sem tirar a naturalidade. O objetivo é um resultado elegante e sutil, mantendo suas expressões."
+    },
+    {
+        question: "O preenchimento facial pode deixar o rosto artificial?",
+        answer: "O risco de um resultado artificial existe quando a técnica ou a quantidade de produto são inadequadas. Minha abordagem visa sempre a naturalidade, utilizando o preenchimento com ácido hialurônico para restaurar volumes perdidos e realçar contornos de forma sutil, respeitando a harmonia do seu rosto."
+    },
+    {
+        question: "Qual a diferença entre toxina botulínica e preenchimento?",
+        answer: "São tratamentos com objetivos diferentes. A toxina botulínica (Botox®) relaxa músculos para tratar rugas dinâmicas (que aparecem com o movimento, como pés de galinha). Já o preenchimento com ácido hialurônico repõe volume, trata rugas estáticas (visíveis com o rosto parado) e melhora o contorno facial."
+    },
+    {
+        question: "Há tratamento para calvície e queda de cabelo?",
+        answer: "Sim. A queda de cabelo (alopecia) tem diversas causas e, para cada uma, existe um tratamento específico. Após uma investigação detalhada com exames, definimos o melhor protocolo, que pode incluir medicamentos, tratamentos no consultório (como microagulhamento) e orientações de cuidados."
     }
 ];
 
