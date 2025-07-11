@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { AnimatedDiv } from "./animated-div";
