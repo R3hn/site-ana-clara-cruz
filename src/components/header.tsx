@@ -10,7 +10,6 @@ const navLinks = [
   { href: "#inicio", label: "Início" },
   { href: "#tratamento", label: "Tratamentos" },
   { href: "#sobre", label: "Sobre" },
-  { href: "#detector", label: "Analisador IA" },
   { href: "#depoimentos", label: "Depoimentos" },
   { href: "#processo", label: "Como Funciona" },
   { href: "#duvidas", label: "Dúvidas" },
