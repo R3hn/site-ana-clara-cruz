@@ -14,9 +14,9 @@ const testimonials = [
     text: "Já passei em consulta e realizei procedimentos com a Drª. Ana Clara algumas vezes! Ela é super atenciosa, atualizada, tem a mão bem leve e precisa para realizar os procedimentos. Me sinto segura com as suas indicações e gosto das orientações estéticas também! Confio de olhos fechados e indico a todos!",
   },
   {
-    name: "Juliana A.",
-    initials: "JA",
-    text: "Dra. Ana Clara tem uma escuta ativa incrível. Explica tudo com clareza e os resultados são sempre naturais. Super recomendo!",
+    name: "Daniela Seii",
+    initials: "DS",
+    text: "Sou paciente da dra Ana Clara. Ela é uma médica muito dedicada e cuidadosa. Além de orientações gerais de cuidados com minha pele e cabelo, ela já também diagnosticou e tratou uma doença de pele no meu rosto. Confio muito no trabalho dela! E outro ponto que acho ela diferenciada de outros médicos é a empatia no atendimento! Ela realmente te escuta, entende seu momento de vida/rotina e te dá orientações que farão sentido no seu dia a dia! Recomendo muito",
   },
 ];
 
