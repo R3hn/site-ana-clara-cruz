@@ -9,7 +9,6 @@ export function Hero() {
       className="relative flex items-center overflow-hidden bg-cover bg-center bg-no-repeat pt-32 pb-20 md:pt-40 md:pb-24"
       style={{ backgroundImage: "url('/foto.jpg')" }}
     >
-      {/* This gradient overlay improves text readability on the left while preserving the image on the right */}
       <div className="absolute inset-0 z-10 bg-gradient-to-r from-background from-50% via-background/70 via-[55%] to-transparent to-70%"></div>
       
       <div className="container relative z-20">
