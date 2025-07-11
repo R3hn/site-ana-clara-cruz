@@ -61,7 +61,7 @@ const TreatmentGroup = ({ treatments }: { treatments: { title: string; descripti
 
 export function Treatments() {
     return (
-        <section id="servicos" className="section-padding bg-cream relative overflow-hidden">
+        <section id="tratamentos" className="section-padding bg-cream relative overflow-hidden">
             <div className="absolute inset-0 texture-diamond"></div>
             <div className="container relative">
                 <AnimatedDiv animationClass="animate-fade-in-down" className="text-center mb-16">
