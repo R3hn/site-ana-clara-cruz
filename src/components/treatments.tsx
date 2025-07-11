@@ -1,6 +1,5 @@
 import { Syringe, Bot, Droplets, Wand2, Dna, Microscope, Scissors, Stethoscope, HeartPulse, UserCheck, CheckCircle2 } from "lucide-react";
 import { Button } from "./ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "./ui/card";
 import { AnimatedDiv } from "./animated-div";
 
@@ -41,41 +40,47 @@ const clinicalTreatments = [
     { title: "Tratamentos com imunobiológicos", icon: <HeartPulse/> },
 ];
 
-const TreatmentList = ({ treatments }: { treatments: { title: string; items?: string[]; icon: React.ReactNode }[] }) => (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {treatments.map((treatment, index) => (
-            <AnimatedDiv key={index} animationClass="animate-fade-in-up" delay={index * 100}>
-                <div className="flex items-start space-x-4 h-full">
-                    <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary mt-1">
-                        {treatment.icon}
+const TreatmentGroup = ({ title, treatments, animationDelay }: { title: string, treatments: { title: string; items?: string[]; icon: React.ReactNode }[], animationDelay: number }) => (
+    <AnimatedDiv animationClass="animate-fade-in-up" delay={animationDelay}>
+        <div className="mb-16">
+            <h3 className="text-3xl font-bold text-accent mb-12 text-center font-headline">{title}</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+                {treatments.map((treatment, index) => (
+                    <div key={index} className="flex items-start space-x-4">
+                        <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mt-1">
+                            {treatment.icon}
+                        </div>
+                        <div>
+                            <h4 className="font-semibold text-foreground text-lg mb-2">{treatment.title}</h4>
+                            {treatment.items && treatment.items.length > 0 && (
+                                <ul className="list-disc list-inside text-muted-foreground text-sm space-y-1 marker:text-primary">
+                                    {treatment.items.map((item, i) => <li key={i}>{item}</li>)}
+                                </ul>
+                            )}
+                        </div>
                     </div>
-                    <div>
-                        <h4 className="font-semibold text-foreground text-lg mb-1">{treatment.title}</h4>
-                        {treatment.items && treatment.items.length > 0 && (
-                             <ul className="list-disc list-inside text-muted-foreground text-sm space-y-1">
-                                {treatment.items.map((item, i) => <li key={i}>{item}</li>)}
-                            </ul>
-                        )}
-                    </div>
-                </div>
-            </AnimatedDiv>
-        ))}
-    </div>
+                ))}
+            </div>
+        </div>
+    </AnimatedDiv>
 );
 
-const SimpleTreatmentList = ({ treatments }: { treatments: { title: string; icon: React.ReactNode }[] }) => (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {treatments.map((treatment, index) => (
-            <AnimatedDiv key={index} animationClass="animate-fade-in-up" delay={index * 50}>
-                <div className="flex items-center space-x-3">
-                    <div className="flex-shrink-0 w-5 h-5 text-primary">
-                        {treatment.icon}
+const ClinicalTreatmentList = ({ title, treatments, animationDelay }: { title: string, treatments: { title: string; icon: React.ReactNode }[], animationDelay: number }) => (
+    <AnimatedDiv animationClass="animate-fade-in-up" delay={animationDelay}>
+         <div className="mb-16">
+            <h3 className="text-3xl font-bold text-accent mb-12 text-center font-headline">{title}</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8">
+                {treatments.map((treatment, index) => (
+                    <div key={index} className="flex items-center space-x-3">
+                        <div className="flex-shrink-0 text-primary">
+                            {treatment.icon}
+                        </div>
+                        <p className="text-foreground text-base">{treatment.title}</p>
                     </div>
-                    <p className="text-foreground text-base">{treatment.title}</p>
-                </div>
-            </AnimatedDiv>
-        ))}
-    </div>
+                ))}
+            </div>
+        </div>
+    </AnimatedDiv>
 );
 
 
@@ -84,40 +89,22 @@ export function Treatments() {
         <section id="servicos" className="section-padding bg-cream relative overflow-hidden">
             <div className="absolute inset-0 texture-diamond"></div>
             <div className="container relative">
-                <AnimatedDiv animationClass="animate-fade-in-down" className="text-center mb-16">
+                <AnimatedDiv animationClass="animate-fade-in-down" className="text-center mb-20">
                     <h2 className="font-headline text-4xl md:text-5xl font-bold text-accent mb-4">Tratamentos Oferecidos</h2>
                     <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                         Soluções completas e personalizadas para a saúde e beleza da sua pele.
                     </p>
                 </AnimatedDiv>
 
-                <Tabs defaultValue="estetica" className="w-full">
-                    <AnimatedDiv animationClass="animate-fade-in-up" delay={200}>
-                        <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 h-auto md:h-12 mb-12 bg-primary/5 p-2 rounded-xl">
-                            <TabsTrigger value="estetica" className="py-2.5 rounded-lg">Dermatologia Estética</TabsTrigger>
-                            <TabsTrigger value="clinica" className="py-2.5 rounded-lg">Dermatologia Clínica</TabsTrigger>
-                            <TabsTrigger value="cirurgica" className="py-2.5 rounded-lg">Dermatologia Cirúrgica</TabsTrigger>
-                        </TabsList>
-                    </AnimatedDiv>
-                    
-                    <Card className="rounded-3xl shadow-2xl border-primary/10 bg-white/80 backdrop-blur-sm">
-                        <CardContent className="p-8 md:p-12">
-                            <TabsContent value="estetica">
-                                <TreatmentList treatments={aestheticTreatments} />
-                            </TabsContent>
-                            <TabsContent value="clinica">
-                                <SimpleTreatmentList treatments={clinicalTreatments} />
-                            </TabsContent>
-                            <TabsContent value="cirurgica">
-                                <TreatmentList treatments={surgicalTreatments} />
-                            </TabsContent>
-                        </CardContent>
-                    </Card>
-                </Tabs>
+                <div className="space-y-16">
+                    <TreatmentGroup title="Dermatologia Estética" treatments={aestheticTreatments} animationDelay={200} />
+                    <ClinicalTreatmentList title="Dermatologia Clínica" treatments={clinicalTreatments} animationDelay={400} />
+                    <TreatmentGroup title="Dermatologia Cirúrgica" treatments={surgicalTreatments} animationDelay={600} />
+                </div>
                 
-                <AnimatedDiv animationClass="animate-fade-in-up" delay={400} className="text-center mt-16">
-                    <Card className="max-w-4xl mx-auto p-8 md:p-12 rounded-3xl shadow-lg bg-white relative overflow-hidden">
-                         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"></div>
+                <AnimatedDiv animationClass="animate-fade-in-up" delay={800} className="text-center mt-24">
+                    <Card className="max-w-4xl mx-auto p-8 md:p-12 rounded-3xl shadow-lg bg-white relative overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"></div>
                         <CardContent className="p-0 relative z-10">
                             <h3 className="text-2xl md:text-3xl font-semibold text-primary mb-6 font-headline">
                                 Pronta para começar sua jornada de cuidados?
