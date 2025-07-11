@@ -1,4 +1,3 @@
-
 import { Award, GraduationCap, Heart, Leaf, Stethoscope } from "lucide-react";
 import { Button } from "./ui/button";
 import { AnimatedDiv } from "./animated-div";
@@ -29,7 +28,7 @@ const benefitItems = [
         icon: <Stethoscope className="h-5 w-5" />,
         tag: "Clínica • Estética • Cirúrgica",
         sideCard: {
-            icon: <Heart className="h-12 w-12 text-primary mb-6 animate-gentle-float"/>,
+            icon: <Stethoscope className="h-12 w-12 text-primary mb-6 animate-gentle-float"/>,
             title: "Cuidado Integral",
             description: "Da prevenção ao tratamento, cuidamos da sua pele de forma completa e personalizada."
         }
@@ -50,7 +49,7 @@ const benefitItems = [
 
 export function Benefits() {
     return (
-        <section id="tratamento" className="section-padding bg-gradient-to-br from-cream to-white relative overflow-hidden animate-background-shift">
+        <section id="tratamento" className="section-padding bg-gradient-to-br from-cream to-white relative overflow-hidden">
              <div className="absolute inset-0 animate-morphing-blur">
                 <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full -translate-x-48 -translate-y-48 animate-soft-glow"></div>
                 <div className="absolute bottom-0 right-0 w-80 h-80 bg-accent/5 rounded-full translate-x-40 translate-y-40 animate-soft-glow delay-500"></div>
@@ -67,7 +66,7 @@ export function Benefits() {
                             <AnimatedDiv animationClass={index % 2 !== 0 ? 'animate-fade-in-right' : 'animate-fade-in-left'} delay={200} className="lg:w-1/2 w-full">
                                 <div className="relative">
                                     <div className="bg-white rounded-3xl p-8 shadow-2xl border border-primary/10 transition-transform duration-300 hover:-translate-y-2">
-                                        <div className="absolute -left-5 top-8 w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-full hidden lg:flex items-center justify-center shadow-lg animate-gentle-float">
+                                        <div className="absolute -left-5 top-8 w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-full hidden lg:flex items-center justify-center shadow-lg">
                                             <span className="text-white font-bold text-lg">{item.step}</span>
                                         </div>
                                         <div className="lg:ml-4">
@@ -96,7 +95,7 @@ export function Benefits() {
                             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary-light/10"></div>
                             <div className="absolute inset-0 texture-dots opacity-[0.03]"></div>
                             <div className="relative z-10">
-                                <Heart className="h-12 w-12 text-primary mx-auto mb-6 animate-gentle-float"/>
+                                <Heart className="h-12 w-12 text-primary mx-auto mb-6"/>
                                 <h3 className="text-3xl font-bold mb-6 font-headline text-accent">Sua pele merece o melhor cuidado</h3>
                                 <p className="text-lg mb-8 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                                     Cuide da sua saúde e autoestima com tratamentos dermatológicos de excelência em um ambiente acolhedor e sofisticado.
