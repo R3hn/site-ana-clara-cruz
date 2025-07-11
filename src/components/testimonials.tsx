@@ -23,6 +23,11 @@ const testimonials = [
     initials: "HA",
     text: "Adorei a consulta com a dra Ana Clara. Muito atenciosa, ela tem uma ótima formação, uma consulta completa. O que eu mais gostei é que ela respeitou as minhas preferências e indicou os melhores procedimentos que foram certeiros. Indico com certeza.",
   },
+  {
+    name: "Ana Luiza de Carvalho",
+    initials: "AL",
+    text: "Muito atenciosa, senti que realmente passa bem pro paciente o conhecimento tecnico de uma forma acessível. Também me senti muito confortável e acolhida com ela, o que não é fácil de encontrar com muitos médicos. Super precisa nos procedimentos, adorei os resultados. Com certeza recomendaria!!",
+  },
 ];
 
 export function Testimonials() {
