@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex items-center w-full min-h-screen overflow-hidden bg-background pt-32 pb-16 md:pt-40 md:pb-24"
+      className="relative flex items-center w-full min-h-screen overflow-hidden bg-background pt-32 pb-16 md:pt-56 md:pb-24"
     >
       {/* Desktop Image Background */}
       <div className="absolute inset-0 z-0 hidden md:block">
