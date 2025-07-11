@@ -1,6 +1,7 @@
 import { Syringe, Bot, Droplets, Wand2, Dna, Microscope, Scissors, Stethoscope, HeartPulse, UserCheck, CheckCircle2, ShieldCheck, Waves, Sun, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AnimatedDiv } from "./animated-div";
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -28,35 +29,32 @@ const surgicalTreatments = [
 ];
 
 const clinicalTreatments = [
-    { title: "Detecção Precoce de Câncer de Pele", description: "Avaliação minuciosa de pintas e lesões para diagnóstico precoce e prevenção.", icon: <UserCheck/> },
-    { title: "Tratamento de Acne", description: "Abordagens personalizadas para controle da acne, prevenção de cicatrizes e cuidados com a pele.", icon: <CheckCircle2/> },
-    { title: "Controle da Rosácea", description: "Planos de tratamento para minimizar a vermelhidão e controlar os sintomas da rosácea.", icon: <Sun/> },
-    { title: "Manejo da Psoríase", description: "Cuidados para controlar as lesões, aliviar o desconforto e melhorar a qualidade de vida.", icon: <ShieldCheck/> },
-    { title: "Tratamento de Dermatites", description: "Diagnóstico e tratamento de diversos tipos de dermatites, como atópica e de contato.", icon: <Waves/> },
-    { title: "Cuidado com Vitiligo", description: "Opções de tratamento para estabilização e repigmentação das áreas afetadas pela condição.", icon: <Sparkles/> },
-    { title: "Gestão do Melasma", description: "Protocolos avançados e personalizados para clarear e controlar as manchas de melasma.", icon: <Sun/> },
-    { title: "Tratamento de Alopécias", description: "Diagnóstico preciso das causas da queda de cabelo e tratamentos para a saúde capilar.", icon: <HeartPulse/> },
-    { title: "Doenças da Pele em Geral", description: "Diagnóstico e tratamento de uma vasta gama de outras condições dermatológicas.", icon: <Stethoscope/> },
-    { title: "Terapias com Imunobiológicos", description: "Uso de medicamentos modernos e de alta tecnologia para doenças inflamatórias crônicas.", icon: <ShieldCheck/> },
+    { title: "Detecção Precoce de Câncer de Pele", description: "Avaliação minuciosa de pintas e lesões para diagnóstico precoce e prevenção.", icon: <UserCheck className="h-6 w-6"/> },
+    { title: "Tratamento de Acne", description: "Abordagens personalizadas para controle da acne, prevenção de cicatrizes e cuidados com a pele.", icon: <CheckCircle2 className="h-6 w-6"/> },
+    { title: "Controle da Rosácea", description: "Planos de tratamento para minimizar a vermelhidão e controlar os sintomas da rosácea.", icon: <Sun className="h-6 w-6"/> },
+    { title: "Manejo da Psoríase", description: "Cuidados para controlar as lesões, aliviar o desconforto e melhorar a qualidade de vida.", icon: <ShieldCheck className="h-6 w-6"/> },
+    { title: "Tratamento de Dermatites", description: "Diagnóstico e tratamento de diversos tipos de dermatites, como atópica e de contato.", icon: <Waves className="h-6 w-6"/> },
+    { title: "Cuidado com Vitiligo", description: "Opções de tratamento para estabilização e repigmentação das áreas afetadas pela condição.", icon: <Sparkles className="h-6 w-6"/> },
+    { title: "Gestão do Melasma", description: "Protocolos avançados e personalizados para clarear e controlar as manchas de melasma.", icon: <Sun className="h-6 w-6"/> },
+    { title: "Tratamento de Alopécias", description: "Diagnóstico preciso das causas da queda de cabelo e tratamentos para a saúde capilar.", icon: <HeartPulse className="h-6 w-6"/> },
+    { title: "Doenças da Pele em Geral", description: "Diagnóstico e tratamento de uma vasta gama de outras condições dermatológicas.", icon: <Stethoscope className="h-6 w-6"/> },
+    { title: "Terapias com Imunobiológicos", description: "Uso de medicamentos modernos e de alta tecnologia para doenças inflamatórias crônicas.", icon: <ShieldCheck className="h-6 w-6"/> },
 ];
 
-const TreatmentGroup = ({ title, treatments, animationDelay }: { title: string, treatments: { title: string; description: string; icon: React.ReactNode }[], animationDelay: number }) => (
-    <AnimatedDiv animationClass="animate-fade-in-up" delay={animationDelay}>
-        <div className="mb-16">
-            <h3 className="text-3xl font-bold text-accent mb-12 text-center font-headline">{title}</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
-                {treatments.map((treatment, index) => (
-                    <div key={index} className="flex items-start space-x-5">
-                        <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mt-1">
-                            {treatment.icon}
-                        </div>
-                        <div>
-                            <h4 className="font-semibold text-foreground text-lg mb-1">{treatment.title}</h4>
-                            <p className="text-muted-foreground text-base leading-relaxed">{treatment.description}</p>
-                        </div>
+const TreatmentGroup = ({ treatments }: { treatments: { title: string; description: string; icon: React.ReactNode }[] }) => (
+    <AnimatedDiv animationClass="animate-fade-in-up" delay={150}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
+            {treatments.map((treatment, index) => (
+                <div key={index} className="flex items-start space-x-5">
+                    <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mt-1">
+                        {treatment.icon}
                     </div>
-                ))}
-            </div>
+                    <div>
+                        <h4 className="font-semibold text-foreground text-lg mb-1">{treatment.title}</h4>
+                        <p className="text-muted-foreground text-base leading-relaxed">{treatment.description}</p>
+                    </div>
+                </div>
+            ))}
         </div>
     </AnimatedDiv>
 );
@@ -66,20 +64,34 @@ export function Treatments() {
         <section id="servicos" className="section-padding bg-cream relative overflow-hidden">
             <div className="absolute inset-0 texture-diamond"></div>
             <div className="container relative">
-                <AnimatedDiv animationClass="animate-fade-in-down" className="text-center mb-20">
+                <AnimatedDiv animationClass="animate-fade-in-down" className="text-center mb-16">
                     <h2 className="font-headline text-4xl md:text-5xl font-bold text-accent mb-4">Tratamentos Oferecidos</h2>
                     <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                         Soluções completas e personalizadas para a saúde e beleza da sua pele.
                     </p>
                 </AnimatedDiv>
-
-                <div className="space-y-16">
-                    <TreatmentGroup title="Dermatologia Estética" treatments={aestheticTreatments} animationDelay={200} />
-                    <TreatmentGroup title="Dermatologia Clínica" treatments={clinicalTreatments} animationDelay={400} />
-                    <TreatmentGroup title="Dermatologia Cirúrgica" treatments={surgicalTreatments} animationDelay={600} />
-                </div>
                 
-                <AnimatedDiv animationClass="animate-fade-in-up" delay={800} className="text-center mt-24">
+                <Tabs defaultValue="estetica" className="w-full">
+                    <AnimatedDiv animationClass="animate-fade-in-up">
+                        <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 h-auto bg-primary/5 p-2 rounded-2xl mb-16">
+                            <TabsTrigger value="estetica" className="text-base py-3 rounded-xl">Dermatologia Estética</TabsTrigger>
+                            <TabsTrigger value="clinica" className="text-base py-3 rounded-xl">Dermatologia Clínica</TabsTrigger>
+                            <TabsTrigger value="cirurgica" className="text-base py-3 rounded-xl">Dermatologia Cirúrgica</TabsTrigger>
+                        </TabsList>
+                    </AnimatedDiv>
+
+                    <TabsContent value="estetica">
+                        <TreatmentGroup treatments={aestheticTreatments} />
+                    </TabsContent>
+                    <TabsContent value="clinica">
+                        <TreatmentGroup treatments={clinicalTreatments} />
+                    </TabsContent>
+                    <TabsContent value="cirurgica">
+                        <TreatmentGroup treatments={surgicalTreatments} />
+                    </TabsContent>
+                </Tabs>
+                
+                <AnimatedDiv animationClass="animate-fade-in-up" delay={300} className="text-center mt-24">
                     <Card className="max-w-4xl mx-auto p-8 md:p-12 rounded-3xl shadow-lg bg-white relative overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
                         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"></div>
                         <CardContent className="p-0 relative z-10">
