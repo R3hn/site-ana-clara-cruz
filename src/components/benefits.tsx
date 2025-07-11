@@ -49,7 +49,7 @@ const benefitItems = [
 
 export function Benefits() {
     return (
-        <section id="tratamento" className="section-padding bg-gradient-to-br from-cream to-white relative overflow-hidden">
+        <section id="diferenciais" className="section-padding bg-gradient-to-br from-cream to-white relative overflow-hidden">
              <div className="absolute inset-0 animate-morphing-blur">
                 <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full -translate-x-48 -translate-y-48 animate-soft-glow"></div>
                 <div className="absolute bottom-0 right-0 w-80 h-80 bg-accent/5 rounded-full translate-x-40 translate-y-40 animate-soft-glow delay-500"></div>
