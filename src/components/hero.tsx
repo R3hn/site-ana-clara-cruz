@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex items-center w-full min-h-screen overflow-hidden bg-background pt-32 pb-16 md:pt-56 md:pb-24"
+      className="relative flex items-center w-full min-h-[85vh] md:min-h-screen overflow-hidden bg-background pt-32 pb-16 md:pt-56 md:pb-24"
     >
       {/* Desktop Image Background */}
       <div className="absolute inset-0 z-0 hidden md:block">
@@ -26,7 +26,7 @@ export function Hero() {
       {/* Mobile-First Layout */}
       <div className="container relative z-10 md:grid md:grid-cols-2 md:items-center md:gap-12">
         {/* Mobile-only Image & Text Overlay */}
-        <div className="md:hidden relative mx-auto -mt-8 -mb-16 aspect-[9/16] w-[calc(100%+4rem)] max-w-none -translate-x-8">
+        <div className="md:hidden relative mx-auto aspect-[9/16] w-[calc(100%+4rem)] max-w-none -translate-x-8">
             <Image
               src="/foto.jpg"
               alt="Dra. Ana Clara Cruz"
