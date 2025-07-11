@@ -20,6 +20,7 @@ const carouselImages = [
     { src: "/procedimento2.jpg", alt: "Detalhe de um procedimento estético sendo realizado", hint: "aesthetic procedure" },
     { src: "/foto2.jpg", alt: "Dra. Ana Clara Cruz em seu consultório", hint: "doctor office" },
     { src: "/procedimento3.jpg", alt: "Paciente recebendo tratamento dermatológico", hint: "patient treatment" },
+    { src: "/foto3.jpg", alt: "Dra. Ana Clara Cruz sorrindo", hint: "doctor smiling" },
 ];
 
 export function About() {
