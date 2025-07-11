@@ -9,9 +9,9 @@ const testimonials = [
     text: "A Dra Ana Clara foi maravilhosa, uma excelente profissional. Muito atenciosa e muito clara nas explicações, me examinou de cima a baixo, me tranquilizou quanto às dúvidas. O espaço do consultório é lindo e a secretária muito educada. Fizemos meu primeiro procedimento, não vejo a hora de voltar e fazer outros procedimentos com ela. Tem uma mão de fada quase não senti dor. Super recomendo a consulta e os procedimentos com ela. Irei voltar mais vezes para continuar meu planejamento terapêutico.",
   },
   {
-    name: "Roberta S.",
-    initials: "RS",
-    text: "Profissional completa! Cuida tanto da parte clínica quanto estética com muito conhecimento. Consultório lindo e atendimento impecável.",
+    name: "Monique Costa",
+    initials: "MC",
+    text: "Já passei em consulta e realizei procedimentos com a Drª. Ana Clara algumas vezes! Ela é super atenciosa, atualizada, tem a mão bem leve e precisa para realizar os procedimentos. Me sinto segura com as suas indicações e gosto das orientações estéticas também! Confio de olhos fechados e indico a todos!",
   },
   {
     name: "Juliana A.",
