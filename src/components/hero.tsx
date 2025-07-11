@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex items-center w-full min-h-[85vh] md:min-h-screen overflow-hidden bg-background pt-32 pb-16 md:pt-56 md:pb-24"
+      className="relative flex items-center w-full min-h-[85vh] md:min-h-screen overflow-hidden bg-background md:pt-56 md:pb-24"
     >
       {/* Desktop Image Background */}
       <div className="absolute inset-0 z-0 hidden md:block">
@@ -42,7 +42,7 @@ export function Hero() {
                  <div className="text-left">
                     <AnimatedDiv animationClass="animate-fade-in-up" delay={0}>
                       <h1 className="font-headline text-5xl md:text-6xl font-medium leading-tight text-white">
-                        Dra. Ana<br className="md:hidden" /> Clara Cruz
+                        Dra. Ana<br />Clara Cruz
                       </h1>
                       <h2 className="font-headline text-4xl md:text-5xl font-medium text-primary-soft leading-tight mt-2 mb-6">
                         Dermatologia Clínica,<br/> Estética e Cirúrgica
