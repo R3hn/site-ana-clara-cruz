@@ -11,54 +11,43 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative overflow-hidden bg-gradient-to-br from-white to-cream min-h-screen flex items-center pt-32 pb-16 md:pt-0 md:pb-0">
-      <div className="absolute inset-0 texture-grid z-0"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/80 z-10 md:hidden"></div>
-
-      {/* Floating Decorative Elements */}
-      <div className="absolute top-[10%] left-[5%] w-32 h-32 bg-primary/5 rounded-full animate-float -z-1"></div>
-      <div className="absolute top-[60%] right-[8%] w-20 h-20 bg-accent/5 rounded-full animate-float animation-delay-[2s] -z-1 hidden md:block"></div>
-
-
-      <div className="container relative z-20">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="w-full lg:w-3/5 text-center md:text-left">
-                <AnimatedDiv animationClass="animate-fade-in-up" className="space-y-6">
-                    <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-semibold text-accent leading-tight">
-                        Dra. Ana Clara Cruz<br />
-                        <span className="text-primary">Dermatologista Clínica, Estética e Cirúrgica</span>
-                    </h1>
-                    <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mx-auto md:mx-0">
-                        Cuidados dermatológicos completos com foco na sua saúde, autoestima e beleza natural. Atendimento humanizado na Vila Olímpia.
-                    </p>
-                </AnimatedDiv>
-                <AnimatedDiv animationClass="animate-fade-in-up" delay={200} className="mt-8">
-                    <Button asChild size="lg" className="rounded-full bg-gradient-to-r from-primary to-primary-light text-white font-medium shadow-lg transition-transform hover:scale-105 animate-luxury-pulse h-14 px-8 text-base">
-                        <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
-                            <WhatsAppIcon className="h-5 w-5 mr-3" />
-                            Agendar Consulta Dermatológica
-                        </a>
-                    </Button>
-                    <div className="mt-6 flex items-center text-muted-foreground justify-center md:justify-start">
-                        <MapPin className="h-5 w-5 mr-2 text-primary" />
-                        <span className="font-medium">Clínica Sense - Vila Olímpia, São Paulo - SP</span>
-                    </div>
-                </AnimatedDiv>
-            </div>
-            <div className="hidden lg:flex w-2/5 items-end justify-center relative h-[600px]">
-                <AnimatedDiv animationClass="animate-luxury-zoom" delay={400} className="absolute bottom-0 w-[400px] h-[550px]">
-                  <Image 
-                    src="https://placehold.co/400x550.png"
-                    alt="Dra. Ana Clara Cruz"
-                    width={400}
-                    height={550}
-                    priority
-                    data-ai-hint="dermatologist portrait"
-                    className="rounded-t-full object-cover shadow-2xl h-full w-full"
-                  />
-                </AnimatedDiv>
-            </div>
-        </div>
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center text-white text-center">
+      <Image
+        src="https://placehold.co/1920x1080.png"
+        alt="Dra. Ana Clara Cruz - Fundo"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        priority
+        data-ai-hint="dermatologist portrait"
+        className="z-0"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20 z-10"></div>
+      
+      <div className="container relative z-20 pt-20 pb-16 md:pt-0 md:pb-0">
+        <AnimatedDiv animationClass="animate-fade-in-up" className="max-w-4xl mx-auto">
+          <h1 className="font-headline text-4xl md:text-5xl lg:text-7xl font-semibold text-white leading-tight drop-shadow-xl">
+            Dra. Ana Clara Cruz
+          </h1>
+          <p className="mt-4 font-body text-xl md:text-2xl lg:text-3xl text-white/90 drop-shadow-lg font-light">
+            Dermatologista Clínica, Estética e Cirúrgica
+          </p>
+          <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
+            Cuidados dermatológicos completos com foco na sua saúde, autoestima e beleza natural. Atendimento humanizado na Vila Olímpia.
+          </p>
+        </AnimatedDiv>
+        <AnimatedDiv animationClass="animate-fade-in-up" delay={200} className="mt-10">
+          <Button asChild size="lg" className="rounded-full bg-white text-primary hover:bg-white/90 font-bold shadow-2xl transition-transform hover:scale-105 animate-luxury-pulse h-16 px-10 text-lg">
+            <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
+              <WhatsAppIcon className="h-6 w-6 mr-3" />
+              Agendar Consulta
+            </a>
+          </Button>
+          <div className="mt-6 flex items-center justify-center text-white/90 drop-shadow-md">
+            <MapPin className="h-5 w-5 mr-2" />
+            <span className="font-medium">Clínica Sense - Vila Olímpia, São Paulo - SP</span>
+          </div>
+        </AnimatedDiv>
       </div>
     </section>
   );
