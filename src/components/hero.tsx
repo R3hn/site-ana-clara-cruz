@@ -32,7 +32,7 @@ export function Hero() {
                 Dra. Ana Clara Cruz
               </h1>
               <h2 className="font-headline text-4xl md:text-5xl font-medium text-primary leading-tight mt-2 mb-6">
-                Dermatologista Clínica,<br/> Estética e Cirúrgica
+                Dermatologia Clínica,<br/> Estética e Cirúrgica
               </h2>
             </AnimatedDiv>
             
