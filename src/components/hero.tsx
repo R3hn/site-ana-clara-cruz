@@ -7,24 +7,43 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative w-full overflow-hidden bg-background pt-48 pb-32"
+      className="relative w-full overflow-hidden bg-background pt-32 md:pt-48 md:pb-32"
     >
-      <div className="absolute inset-0 z-0">
+      {/* Desktop Image Background */}
+      <div className="absolute inset-0 z-0 hidden md:block">
         <Image
           src="/foto.jpg"
           alt="Consultório da Dra. Ana Clara Cruz"
           fill
           className="object-cover"
-          style={{ objectPosition: 'top' }}
+          style={{ objectPosition: '80% 50%' }}
           priority
           quality={100}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent md:bg-gradient-to-r md:from-background md:from-40% md:to-60%"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-background from-40% via-background/90 to-60%"></div>
       </div>
       
       <div className="container relative z-10">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <div className="text-left">
+          
+          {/* Mobile-only Image */}
+          <div className="md:hidden">
+             <AnimatedDiv animationClass="animate-fade-in-down">
+                <div className="relative mx-auto h-[400px] w-full overflow-hidden rounded-3xl shadow-2xl">
+                    <Image
+                      src="/foto.jpg"
+                      alt="Dra. Ana Clara Cruz"
+                      fill
+                      className="object-cover"
+                      style={{ objectPosition: 'top' }}
+                      priority
+                      quality={90}
+                    />
+                </div>
+            </AnimatedDiv>
+          </div>
+
+          <div className="text-left md:text-left">
             <AnimatedDiv animationClass="animate-fade-in-up" delay={0}>
               <h1 className="font-headline text-5xl md:text-6xl font-medium text-accent leading-tight">
                 Dra. Ana Clara Cruz
@@ -54,7 +73,9 @@ export function Hero() {
             </AnimatedDiv>
           </div>
           
-          <div className="hidden lg:block"></div>
+          <div className="hidden lg:block">
+            {/* This space is intentionally left blank on desktop to push text to the left column */}
+          </div>
         </div>
       </div>
     </section>
