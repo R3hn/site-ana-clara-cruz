@@ -1,6 +1,10 @@
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { AnimatedDiv } from "./animated-div";
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+import Image from "next/image";
+import Autoplay from "embla-carousel-autoplay";
+import React from "react";
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
@@ -8,7 +12,17 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
     </svg>
 );
 
+const carouselImages = [
+    { src: "https://placehold.co/400x500.png", alt: "Retrato da Dra. Ana Clara Cruz", hint: "professional portrait" },
+    { src: "https://placehold.co/400x500.png", alt: "Dra. Ana Clara Cruz realizando procedimento", hint: "dermatologist procedure" },
+    { src: "https://placehold.co/400x500.png", alt: "Dra. Ana Clara Cruz em seu consultório", hint: "doctor office" },
+];
+
 export function About() {
+    const plugin = React.useRef(
+        Autoplay({ delay: 3000, stopOnInteraction: true })
+    );
+
     return (
         <section id="sobre" className="section-padding bg-secondary relative overflow-hidden">
             <div className="absolute inset-0 texture-grid animate-morphing-blur"></div>
@@ -19,29 +33,62 @@ export function About() {
                 </AnimatedDiv>
 
                 <AnimatedDiv animationClass="animate-fade-in-up" delay={200}>
-                    <Card className="max-w-5xl mx-auto shadow-2xl rounded-3xl p-8 md:p-12 relative overflow-hidden border-primary/10">
+                    <Card className="max-w-6xl mx-auto shadow-2xl rounded-3xl p-8 md:p-12 relative overflow-hidden border-primary/10">
                         <CardContent className="p-0">
-                            <div className="text-base md:text-lg leading-relaxed text-foreground space-y-6 relative z-10">
-                                <p className="text-2xl font-semibold text-primary font-headline">Olá, muito prazer!</p>
-                                
-                                <p><strong>Sou a Dra. Ana Clara Ladária Cruz, médica dermatologista em São Paulo, capital.</strong></p>
-                                
-                                <p>Minha prática é guiada por um cuidado com propósito: combinar ciência, empatia e sofisticação para oferecer o melhor da dermatologia. Acredito que cada paciente é único e merece um atendimento personalizado que valorize sua saúde, autoestima e beleza natural.</p>
-                                
-                                <p>Me formei em Medicina pela UNICAMP e fiz minha Residência Médica em Dermatologia pela Escola Paulista de Medicina – UNIFESP, duas das mais renomadas instituições do país. Sou Membro titular da Sociedade Brasileira de Dermatologia (SBD) e me mantenho sempre atualizada com os avanços da especialidade.</p>
-                                
-                                <p>Atuo nas três áreas da dermatologia: <strong>clínica</strong> (tratamento de doenças de pele), <strong>estética</strong> (procedimentos para rejuvenescimento e beleza) e <strong>cirúrgica</strong> (pequenas cirurgias dermatológicas). Meu objetivo é oferecer cuidados completos em um ambiente acolhedor e moderno.</p>
-                                
-                                <p className="text-primary font-semibold text-xl md:text-2xl italic font-headline">Seja muito bem-vinda. Será um prazer cuidar da sua pele com todo carinho e profissionalismo.</p>
-                            </div>
-                            
-                            <div className="text-center mt-12">
-                                <Button asChild size="lg" className="rounded-full h-14 px-8 text-base bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                                    <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
-                                        <WhatsAppIcon className="h-5 w-5 mr-3" />
-                                        Quero conversar com a Dra. Ana Clara
-                                    </a>
-                                </Button>
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                                <div className="order-2 lg:order-1">
+                                    <div className="text-base md:text-lg leading-relaxed text-foreground space-y-6 relative z-10">
+                                        <p className="text-2xl font-semibold text-primary font-headline">Olá, muito prazer!</p>
+                                        
+                                        <p><strong>Sou a Dra. Ana Clara Ladária Cruz, médica dermatologista em São Paulo, capital.</strong></p>
+                                        
+                                        <p>Minha prática é guiada por um cuidado com propósito: combinar ciência, empatia e sofisticação para oferecer o melhor da dermatologia. Acredito que cada paciente é único e merece um atendimento personalizado que valorize sua saúde, autoestima e beleza natural.</p>
+                                        
+                                        <p>Me formei em Medicina pela UNICAMP e fiz minha Residência Médica em Dermatologia pela Escola Paulista de Medicina – UNIFESP, duas das mais renomadas instituições do país. Sou Membro titular da Sociedade Brasileira de Dermatologia (SBD) e me mantenho sempre atualizada com os avanços da especialidade.</p>
+                                        
+                                        <p>Atuo nas três áreas da dermatologia: <strong>clínica</strong> (tratamento de doenças de pele), <strong>estética</strong> (procedimentos para rejuvenescimento e beleza) e <strong>cirúrgica</strong> (pequenas cirurgias dermatológicas). Meu objetivo é oferecer cuidados completos em um ambiente acolhedor e moderno.</p>
+                                        
+                                        <p className="text-primary font-semibold text-xl md:text-2xl italic font-headline">Seja muito bem-vinda. Será um prazer cuidar da sua pele com todo carinho e profissionalismo.</p>
+                                    </div>
+                                    
+                                    <div className="text-center lg:text-left mt-12">
+                                        <Button asChild size="lg" className="rounded-full h-14 px-8 text-base bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                                            <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
+                                                <WhatsAppIcon className="h-5 w-5 mr-3" />
+                                                Quero conversar com a Dra. Ana Clara
+                                            </a>
+                                        </Button>
+                                    </div>
+                                </div>
+                                <div className="order-1 lg:order-2">
+                                    <Carousel
+                                        plugins={[plugin.current]}
+                                        className="w-full max-w-md mx-auto"
+                                        onMouseEnter={plugin.current.stop}
+                                        onMouseLeave={plugin.current.reset}
+                                    >
+                                        <CarouselContent>
+                                            {carouselImages.map((img, index) => (
+                                                <CarouselItem key={index}>
+                                                    <div className="p-1">
+                                                        <Card className="rounded-2xl overflow-hidden shadow-lg">
+                                                            <CardContent className="flex aspect-[4/5] items-center justify-center p-0">
+                                                                <Image
+                                                                    src={img.src}
+                                                                    alt={img.alt}
+                                                                    data-ai-hint={img.hint}
+                                                                    width={400}
+                                                                    height={500}
+                                                                    className="object-cover w-full h-full"
+                                                                />
+                                                            </CardContent>
+                                                        </Card>
+                                                    </div>
+                                                </CarouselItem>
+                                            ))}
+                                        </CarouselContent>
+                                    </Carousel>
+                                </div>
                             </div>
                         </CardContent>
                     </Card>
