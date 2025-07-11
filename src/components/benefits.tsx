@@ -91,7 +91,7 @@ export function Benefits() {
                     ))}
                     
                     <AnimatedDiv animationClass="animate-scale-in" delay={400} className="text-center group">
-                        <div className="bg-white rounded-3xl p-12 shadow-2xl relative overflow-hidden border-2 border-primary/20 transition-transform duration-300 hover:-translate-y-2">
+                        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden border-2 border-primary/20 transition-transform duration-300 hover:-translate-y-2">
                             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary-light/10"></div>
                             <div className="absolute inset-0 texture-dots opacity-[0.03]"></div>
                             <div className="relative z-10">
@@ -100,9 +100,9 @@ export function Benefits() {
                                 <p className="text-lg mb-8 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                                     Cuide da sua saúde e autoestima com tratamentos dermatológicos de excelência em um ambiente acolhedor e sofisticado.
                                 </p>
-                                <Button asChild size="lg" className="rounded-full text-base bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium h-14 px-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                                <Button asChild size="lg" className="rounded-full text-base bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium h-auto py-4 px-6 md:h-14 md:px-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
                                     <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
-                                        <WhatsAppIcon className="h-5 w-5 mr-3" />
+                                        <WhatsAppIcon className="h-5 w-5 mr-3 flex-shrink-0" />
                                         Quero agendar minha consulta
                                     </a>
                                 </Button>

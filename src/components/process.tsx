@@ -60,10 +60,10 @@ export function Process() {
                             <p className="text-2xl md:text-3xl font-semibold text-primary mb-8 font-headline">
                                 &quot;Cada pessoa é única. O atendimento é feito exclusivamente para você.&quot;
                             </p>
-                            <Button asChild size="lg" className="rounded-full h-14 px-8 text-base bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                                <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
-                                    <WhatsAppIcon className="h-5 w-5 mr-3" />
-                                    Quero agendar minha primeira consulta
+                            <Button asChild size="lg" className="rounded-full h-auto py-4 px-6 md:h-14 md:px-8 text-base bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                                <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer" className="flex items-center text-center">
+                                    <WhatsAppIcon className="h-5 w-5 mr-3 flex-shrink-0" />
+                                    <span>Quero agendar minha<br className="sm:hidden"/> primeira consulta</span>
                                 </a>
                             </Button>
                         </CardContent>

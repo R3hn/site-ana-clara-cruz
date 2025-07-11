@@ -89,10 +89,10 @@ export function Hero() {
             </AnimatedDiv>
 
             <AnimatedDiv animationClass="animate-fade-in-up" delay={400} className="mt-8">
-              <Button asChild size="lg" className="rounded-full bg-primary hover:bg-primary-light text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl h-14 px-8 text-base">
-                <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
-                  <Calendar className="h-5 w-5 mr-3" />
-                  Agendar Consulta Dermatológica
+              <Button asChild size="lg" className="rounded-full bg-primary hover:bg-primary-light text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl h-auto py-4 px-6 md:h-14 md:px-8 text-base">
+                <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer" className="flex items-center text-center">
+                  <Calendar className="h-5 w-5 mr-3 flex-shrink-0" />
+                  <span>Agendar Consulta<br className="sm:hidden"/> Dermatológica</span>
                 </a>
               </Button>
               <div className="mt-6 flex items-center justify-center md:justify-start text-muted-foreground">

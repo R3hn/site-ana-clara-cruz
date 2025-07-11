@@ -51,13 +51,13 @@ export function About() {
                                     
                                     <p>Me formei em Medicina pela UNICAMP, e fiz minha Residência Médica em Dermatologia pela Escola Paulista de Medicina – UNIFESP. Lá, me envolvi com o tratamento do melasma, e como sou apaixonada por ciência, estou terminando meu Doutorado com foco nessa condição (as manchas que tanto impactam na qualidade de vida), também pela UNIFESP.</p>
                                     
-                                    <p>Sou Membro titular da Sociedade Brasileira de Dermatologia - SBD, e participo constantemente de congressos da Sociedade para manter minhas condutas sempre atualizadas.</p>
+                                    <p>Sou Membra titular da Sociedade Brasileira de Dermatologia - SBD, e participo constantemente de congressos da Sociedade para manter minhas condutas sempre atualizadas.</p>
 
                                     <p>Seja muito bem-vinda. Vai ser um prazer caminhar com você nessa jornada.</p>
                                 </div>
                                 
                                 <div className="text-center lg:text-left mt-10">
-                                    <Button asChild size="lg" className="rounded-full h-14 px-8 text-base bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                                    <Button asChild size="lg" className="rounded-full h-auto py-4 px-6 md:h-14 md:px-8 text-base bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                                         <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
                                             <WhatsAppIcon className="h-5 w-5 mr-3" />
                                             Converse com a equipe

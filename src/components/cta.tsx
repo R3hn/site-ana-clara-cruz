@@ -22,10 +22,10 @@ export function Cta() {
                         Agende sua consulta dermatológica e dê o primeiro passo para uma pele mais saudável e bonita.
                     </p>
                     
-                    <Button asChild size="lg" className="bg-white text-primary hover:bg-cream px-10 py-8 rounded-full font-bold text-lg mb-12 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 h-auto">
-                        <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
-                            <WhatsAppIcon className="h-6 w-6 mr-3"/>
-                            Quero agendar minha consulta
+                    <Button asChild size="lg" className="bg-white text-primary hover:bg-cream px-6 md:px-10 py-4 md:py-8 rounded-full font-bold text-lg mb-12 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 h-auto">
+                        <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer" className="flex items-center text-center">
+                            <WhatsAppIcon className="h-6 w-6 mr-3 flex-shrink-0"/>
+                            <span>Quero agendar<br className="sm:hidden"/> minha consulta</span>
                         </a>
                     </Button>
                     
@@ -36,7 +36,7 @@ export function Cta() {
                         </p>
                         <p className="flex items-center justify-center text-base">
                             <GraduationCap className="h-4 w-4 mr-3"/>
-                            Formada pela UNICAMP | Residência UNIFESP | Membro SBD
+                            Formada pela UNICAMP | Residência UNIFESP | Membra SBD
                         </p>
                     </div>
                 </AnimatedDiv>
