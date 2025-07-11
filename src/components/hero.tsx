@@ -11,13 +11,12 @@ export function Hero() {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://placehold.co/1920x1080.png"
-          alt="Background image of a dermatologist's office"
+          src="/foto.png"
+          alt="Dra. Ana Clara Cruz em seu consultório"
           layout="fill"
           objectFit="cover"
           quality={80}
           priority
-          data-ai-hint="dermatologist office"
           className="opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/80 to-transparent"></div>
