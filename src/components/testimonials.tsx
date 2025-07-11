@@ -28,6 +28,11 @@ const testimonials = [
     initials: "AL",
     text: "Muito atenciosa, senti que realmente passa bem pro paciente o conhecimento tecnico de uma forma acessível. Também me senti muito confortável e acolhida com ela, o que não é fácil de encontrar com muitos médicos. Super precisa nos procedimentos, adorei os resultados. Com certeza recomendaria!!",
   },
+  {
+    name: "Giovanna Kaussinis Jorge",
+    initials: "GK",
+    text: "A Dra Ana Clara é ótima! A consulta é completa, examina o corpo todo, pergunta todo seu histórico. Se preocupa com todos os detalhes e tem amplo conhecimento de medicações, interações medicamentosas, estudos e pesquisas. É super ética e profissional, explicando todos os detalhes. Super indico e voltarei mais vezes.",
+  },
 ];
 
 export function Testimonials() {
