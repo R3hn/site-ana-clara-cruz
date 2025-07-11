@@ -38,7 +38,7 @@ export function Hero() {
               data-ai-hint="doctor portrait"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 w-full p-8 pb-12 text-white">
+            <div className="absolute bottom-0 left-0 w-full p-8 pb-8 text-white">
                  <div className="text-left">
                     <AnimatedDiv animationClass="animate-fade-in-up" delay={0}>
                       <h1 className="font-headline text-5xl md:text-6xl font-medium leading-tight text-white">
