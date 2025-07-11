@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative w-full overflow-hidden bg-background pt-40 pb-16 md:pt-48 md:pb-32"
+      className="relative w-full overflow-hidden bg-background pt-48 pb-16 md:pt-48 md:pb-32"
     >
       {/* Desktop Image Background */}
       <div className="absolute inset-0 z-0 hidden md:block">
