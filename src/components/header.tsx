@@ -54,7 +54,7 @@ export function Header() {
       )}
     >
       <div className="container">
-        <div className="flex items-center justify-between py-4 md:py-5">
+        <div className="flex items-center justify-between py-5 md:py-5">
           <div className="flex items-center space-x-6">
             <Link href="#inicio" className="flex items-center">
               <img 
