@@ -1,22 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin } from "lucide-react";
 import { AnimatedDiv } from "./animated-div";
+import Image from "next/image";
 
 export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex items-center overflow-hidden bg-cover bg-no-repeat pt-48 pb-20 md:pt-64 md:pb-24"
-      style={{ 
-        backgroundImage: "url('/foto.jpg')",
-        backgroundPosition: "80% 50%" 
-      }}
+      className="relative w-full overflow-hidden bg-background pt-32 pb-16 md:pt-48 md:pb-24"
     >
-      <div className="absolute inset-0 z-10 bg-gradient-to-r from-background from-40% to-transparent to-60%"></div>
-      
-      <div className="container relative z-20">
-        <div className="grid grid-cols-1">
-          <div className="text-left max-w-2xl">
+      <div className="container">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+          {/* Coluna de Texto */}
+          <div className="text-left">
             <AnimatedDiv animationClass="animate-fade-in-up" delay={0}>
               <h1 className="font-headline text-5xl md:text-6xl font-medium text-accent leading-tight">
                 Dra. Ana Clara Cruz
@@ -45,6 +41,21 @@ export function Hero() {
               </div>
             </AnimatedDiv>
           </div>
+
+          {/* Coluna da Imagem */}
+          <AnimatedDiv animationClass="animate-fade-in-right" delay={200} className="relative order-first lg:order-last flex items-center justify-center">
+             <div className="relative w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] rounded-full overflow-hidden shadow-2xl border-8 border-white/50">
+               <Image 
+                 src="/foto.jpg"
+                 alt="Dra. Ana Clara Cruz"
+                 fill
+                 className="object-cover"
+                 style={{ objectPosition: 'top' }}
+                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                 priority
+               />
+             </div>
+          </AnimatedDiv>
         </div>
       </div>
     </section>
