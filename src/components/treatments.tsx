@@ -1,4 +1,4 @@
-import { Syringe, Bot, Droplets, Wand2, Dna, Microscope, Scissors, Stethoscope, HeartPulse, UserCheck, CheckCircle2 } from "lucide-react";
+import { Syringe, Bot, Droplets, Wand2, Dna, Microscope, Scissors, Stethoscope, HeartPulse, UserCheck, CheckCircle2, ShieldCheck, Waves, Sun, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { AnimatedDiv } from "./animated-div";
@@ -12,7 +12,7 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 const aestheticTreatments = [
     { title: "Aplicação Estética de Toxina", description: "Suavização de rugas e tratamento de condições como hiperidrose e bruxismo.", icon: <Bot className="h-6 w-6"/> },
     { title: "Preenchimento com Ácido Hialurônico", description: "Restauração de volume, contorno facial e hidratação profunda da pele.", icon: <Syringe className="h-6 w-6"/> },
-    { title: "Bioestimuladores de Colágeno", description: "Estímulo da produção natural de colágeno para uma pele mais firme e rejuvenescida.", icon: <Droplets className="h-6 w-6"/> },
+    { title: "Bioestimuladores de Colágeno", description: "Estímulo da produção natural de colágeno para uma pele mais firme e rejuvenescida.", icon: <Sparkles className="h-6 w-6"/> },
     { title: "Fios de PDO (lisos)", description: "Melhora da textura e firmeza da pele em áreas delicadas como pálpebras e glabela.", icon: <Dna className="h-6 w-6"/> },
     { title: "Microagulhamento", description: "Técnica para tratar melasma, cicatrizes e melhorar a textura geral da pele.", icon: <Wand2 className="h-6 w-6"/> },
     { title: "Peelings Químicos", description: "Renovação celular controlada para uma pele mais uniforme, lisa e luminosa.", icon: <Droplets className="h-6 w-6"/> },
@@ -28,23 +28,23 @@ const surgicalTreatments = [
 ];
 
 const clinicalTreatments = [
-    { title: "Detecção de câncer de pele", icon: <UserCheck/> },
-    { title: "Acne", icon: <CheckCircle2/> },
-    { title: "Rosácea", icon: <CheckCircle2/> },
-    { title: "Psoríase", icon: <CheckCircle2/> },
-    { title: "Dermatites", icon: <CheckCircle2/> },
-    { title: "Vitiligo", icon: <CheckCircle2/> },
-    { title: "Melasma", icon: <CheckCircle2/> },
-    { title: "Alopécias", icon: <CheckCircle2/> },
-    { title: "Demais doenças da pele", icon: <Stethoscope/> },
-    { title: "Tratamentos com imunobiológicos", icon: <HeartPulse/> },
+    { title: "Detecção Precoce de Câncer de Pele", description: "Avaliação minuciosa de pintas e lesões para diagnóstico precoce e prevenção.", icon: <UserCheck/> },
+    { title: "Tratamento de Acne", description: "Abordagens personalizadas para controle da acne, prevenção de cicatrizes e cuidados com a pele.", icon: <CheckCircle2/> },
+    { title: "Controle da Rosácea", description: "Planos de tratamento para minimizar a vermelhidão e controlar os sintomas da rosácea.", icon: <Sun/> },
+    { title: "Manejo da Psoríase", description: "Cuidados para controlar as lesões, aliviar o desconforto e melhorar a qualidade de vida.", icon: <ShieldCheck/> },
+    { title: "Tratamento de Dermatites", description: "Diagnóstico e tratamento de diversos tipos de dermatites, como atópica e de contato.", icon: <Waves/> },
+    { title: "Cuidado com Vitiligo", description: "Opções de tratamento para estabilização e repigmentação das áreas afetadas pela condição.", icon: <Sparkles/> },
+    { title: "Gestão do Melasma", description: "Protocolos avançados e personalizados para clarear e controlar as manchas de melasma.", icon: <Sun/> },
+    { title: "Tratamento de Alopécias", description: "Diagnóstico preciso das causas da queda de cabelo e tratamentos para a saúde capilar.", icon: <HeartPulse/> },
+    { title: "Doenças da Pele em Geral", description: "Diagnóstico e tratamento de uma vasta gama de outras condições dermatológicas.", icon: <Stethoscope/> },
+    { title: "Terapias com Imunobiológicos", description: "Uso de medicamentos modernos e de alta tecnologia para doenças inflamatórias crônicas.", icon: <ShieldCheck/> },
 ];
 
 const TreatmentGroup = ({ title, treatments, animationDelay }: { title: string, treatments: { title: string; description: string; icon: React.ReactNode }[], animationDelay: number }) => (
     <AnimatedDiv animationClass="animate-fade-in-up" delay={animationDelay}>
         <div className="mb-16">
             <h3 className="text-3xl font-bold text-accent mb-12 text-center font-headline">{title}</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
                 {treatments.map((treatment, index) => (
                     <div key={index} className="flex items-start space-x-5">
                         <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mt-1">
@@ -61,25 +61,6 @@ const TreatmentGroup = ({ title, treatments, animationDelay }: { title: string, 
     </AnimatedDiv>
 );
 
-const ClinicalTreatmentList = ({ title, treatments, animationDelay }: { title: string, treatments: { title: string; icon: React.ReactNode }[], animationDelay: number }) => (
-    <AnimatedDiv animationClass="animate-fade-in-up" delay={animationDelay}>
-         <div className="mb-16">
-            <h3 className="text-3xl font-bold text-accent mb-12 text-center font-headline">{title}</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8">
-                {treatments.map((treatment, index) => (
-                    <div key={index} className="flex items-center space-x-3">
-                        <div className="flex-shrink-0 text-primary">
-                            {treatment.icon}
-                        </div>
-                        <p className="text-foreground font-medium text-base">{treatment.title}</p>
-                    </div>
-                ))}
-            </div>
-        </div>
-    </AnimatedDiv>
-);
-
-
 export function Treatments() {
     return (
         <section id="servicos" className="section-padding bg-cream relative overflow-hidden">
@@ -94,7 +75,7 @@ export function Treatments() {
 
                 <div className="space-y-16">
                     <TreatmentGroup title="Dermatologia Estética" treatments={aestheticTreatments} animationDelay={200} />
-                    <ClinicalTreatmentList title="Dermatologia Clínica" treatments={clinicalTreatments} animationDelay={400} />
+                    <TreatmentGroup title="Dermatologia Clínica" treatments={clinicalTreatments} animationDelay={400} />
                     <TreatmentGroup title="Dermatologia Cirúrgica" treatments={surgicalTreatments} animationDelay={600} />
                 </div>
                 
