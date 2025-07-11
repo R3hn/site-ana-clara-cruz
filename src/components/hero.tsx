@@ -20,7 +20,7 @@ export function Hero() {
           priority
           quality={100}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background from-40% via-background/90 to-60%"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-background from-30% to-transparent to-50%"></div>
       </div>
       
       <div className="container relative z-10">
