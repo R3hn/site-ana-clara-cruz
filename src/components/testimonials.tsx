@@ -48,6 +48,11 @@ const testimonials = [
     initials: "AL",
     text: "Muito atenciosa, senti que realmente passa bem pro paciente o conhecimento tecnico de uma forma acessível. Também me senti muito confortável e acolhida com ela, o que não é fácil de encontrar com muitos médicos. Super precisa nos procedimentos, adorei os resultados. Com certeza recomendaria!!",
   },
+  {
+    name: "Talita Menin",
+    initials: "TM",
+    text: "Cheguei na consulta com a Dra Ana e ela foi muito atenciosa. Primeiro ouviu todas as minhas queixas, fez diversas perguntas para conhecer melhor a minha rotina, os meus cuidados com a pele e o que me incomodava. Depois, ela examinou a pele do meu corpo inteiro, dos pés a cabeça literalmente. Na hora de propor o tratamento e os cuidados, ela propôs estratégias de forma muito científica e cuidadosa, entendendo qual era o meu objetivo com a consulta. Recomendo a consulta com ela tanto para quem tem alguma queixa dermatológica quanto para quem quer fazer algum procedimento estético. Fiquei muito satisfeita com os resultados que tive. E pretendo voltar em breve.",
+  },
 ];
 
 export function Testimonials() {
