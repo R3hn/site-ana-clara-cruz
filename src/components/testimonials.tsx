@@ -4,9 +4,9 @@ import { AnimatedDiv } from "./animated-div";
 
 const testimonials = [
   {
-    name: "Maria C.",
-    initials: "MC",
-    text: "A Dra. Ana Clara é excepcional! Atendimento humanizado e resultados incríveis. Me sinto muito mais confiante com minha pele.",
+    name: "Carolina Massarentti",
+    initials: "CM",
+    text: "A Dra Ana Clara foi maravilhosa, uma excelente profissional. Muito atenciosa e muito clara nas explicações, me examinou de cima a baixo, me tranquilizou quanto às dúvidas. O espaço do consultório é lindo e a secretária muito educada. Fizemos meu primeiro procedimento, não vejo a hora de voltar e fazer outros procedimentos com ela. Tem uma mão de fada quase não senti dor. Super recomendo a consulta e os procedimentos com ela. Irei voltar mais vezes para continuar meu planejamento terapêutico.",
   },
   {
     name: "Roberta S.",
