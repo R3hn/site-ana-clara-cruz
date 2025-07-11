@@ -43,7 +43,7 @@ export function About() {
                                 <div className="text-base md:text-lg leading-relaxed text-foreground space-y-6 relative z-10">
                                     <p className="text-2xl font-semibold text-primary font-headline">Olá, muito prazer!</p>
                                     
-                                    <p><strong>Sou a Dra. Ana Clara Ladária Cruz, médica dermatologista em São Paulo, capital.</strong></p>
+                                    <p><strong>Sou a Dra. Ana Clara Ladeira Cruz, médica dermatologista em São Paulo, capital.</strong></p>
                                     
                                     <p>Minha prática é guiada por um cuidado com propósito: combinar ciência, empatia e sofisticação para oferecer o melhor da dermatologia. Acredito que cada paciente é único e merece um atendimento personalizado que valorize sua saúde, autoestima e beleza natural.</p>
                                     
