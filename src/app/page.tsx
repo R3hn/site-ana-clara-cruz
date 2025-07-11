@@ -2,6 +2,7 @@ import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { Benefits } from "@/components/benefits";
 import { About } from "@/components/about";
+import { MelasmaDetector } from "@/components/melasma-detector";
 import { Testimonials } from "@/components/testimonials";
 import { Process } from "@/components/process";
 import { Faq } from "@/components/faq";
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <Benefits />
         <About />
+        <MelasmaDetector />
         <Testimonials />
         <Process />
         <Faq />
