@@ -54,13 +54,13 @@ export function Header() {
       )}
     >
       <div className="container">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-2 md:py-4">
           <div className="flex items-center space-x-6">
             <Link href="#inicio" className="flex items-center">
               <img 
                 src="/logo.png" 
                 alt="Logo Dra. Ana Clara Cruz"
-                style={{ width: '180px', height: 'auto' }}
+                className="w-36 md:w-[180px] h-auto"
               />
             </Link>
             <nav className="hidden md:flex items-center space-x-1">
