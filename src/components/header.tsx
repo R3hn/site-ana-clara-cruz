@@ -37,6 +37,7 @@ export function Header() {
       setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Check scroll position on initial load
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -48,7 +49,7 @@ export function Header() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
           ? "bg-white/95 shadow-md backdrop-blur-sm"
-          : "bg-white/80"
+          : "bg-transparent"
       )}
     >
       <div className="container">
@@ -92,8 +93,8 @@ export function Header() {
         </div>
 
         {isOpen && (
-          <div className="md:hidden pb-4">
-            <nav className="flex flex-col space-y-2">
+          <div className="md:hidden pb-4 bg-white/95 rounded-b-lg shadow-lg">
+            <nav className="flex flex-col space-y-2 p-4">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
