@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const navLinks = [
   { href: "#inicio", label: "Início" },
@@ -53,7 +54,7 @@ export function Header() {
       <div className="container">
         <div className="flex items-center justify-between py-4">
           <Link href="#inicio" className="font-headline text-xl font-semibold text-accent">
-            Dra. Ana Clara Cruz
+            <Image src="/logo.png" alt="Dra. Ana Clara Cruz Logo" width={200} height={50} priority />
           </Link>
           <nav className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
