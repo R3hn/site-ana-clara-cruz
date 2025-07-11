@@ -9,7 +9,7 @@ export function Hero() {
       className="relative flex items-center overflow-hidden bg-cover bg-no-repeat pt-48 pb-20 md:pt-64 md:pb-24"
       style={{ 
         backgroundImage: "url('/foto.jpg')",
-        backgroundPosition: "65% 50%" 
+        backgroundPosition: "80% 50%" 
       }}
     >
       <div className="absolute inset-0 z-10 bg-gradient-to-r from-background from-40% to-transparent to-60%"></div>
