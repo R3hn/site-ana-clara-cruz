@@ -13,7 +13,7 @@ export function WhatsAppFloat() {
             target="_blank"
             rel="noopener noreferrer"
             title="Falar no WhatsApp"
-            className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg animate-[pulse_2s_infinite] transition-transform hover:scale-110"
+            className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110"
         >
             <WhatsAppIcon className="h-8 w-8"/>
         </Link>

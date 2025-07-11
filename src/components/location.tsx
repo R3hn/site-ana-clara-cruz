@@ -88,7 +88,7 @@ export function Location() {
                                     </div>
                                 </div>
                                 <div className="mt-8 pt-6 border-t border-primary/10">
-                                    <Button asChild className="w-full rounded-full bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl animate-luxury-pulse h-12 text-base">
+                                    <Button asChild className="w-full rounded-full bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl h-12 text-base">
                                         <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
                                             <WhatsAppIcon className="h-5 w-5 mr-3" />
                                             Agendar Consulta
