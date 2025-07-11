@@ -10,7 +10,7 @@ export function Hero() {
       style={{ backgroundImage: "url('/foto.jpg')" }}
     >
       {/* This gradient overlay improves text readability on the left while preserving the image on the right */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-r from-background/70 via-background/20 to-transparent"></div>
+      <div className="absolute inset-0 z-10 bg-gradient-to-r from-background via-background/70 to-transparent"></div>
       
       <div className="container relative z-20">
         <div className="grid grid-cols-1">
