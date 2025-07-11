@@ -53,7 +53,6 @@ export function Hero() {
             </AnimatedDiv>
           </div>
           
-          {/* Coluna vazia para empurrar o texto para a esquerda em telas grandes */}
           <div className="hidden lg:block"></div>
         </div>
       </div>
