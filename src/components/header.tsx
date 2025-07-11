@@ -76,23 +76,25 @@ export function Header() {
             </nav>
           </div>
 
-           <div className="hidden md:block">
-             <Button asChild className="rounded-full bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
-                    <WhatsAppIcon className="h-4 w-4 mr-2" />
-                    Agendar Consulta
-                </a>
-             </Button>
-           </div>
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle menu"
-            >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
+          <div className="flex items-center">
+            <div className="hidden md:block">
+              <Button asChild className="rounded-full bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                  <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
+                      <WhatsAppIcon className="h-4 w-4 mr-2" />
+                      Agendar Consulta
+                  </a>
+              </Button>
+            </div>
+            <div className="md:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsOpen(!isOpen)}
+                aria-label="Toggle menu"
+              >
+                {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </Button>
+            </div>
           </div>
         </div>
 
