@@ -45,11 +45,13 @@ export function About() {
                                     
                                     <p><strong>Sou a Dra. Ana Clara Ladeira Cruz, médica dermatologista em São Paulo, capital.</strong></p>
                                     
-                                    <p>Minha prática é guiada por um cuidado com propósito: combinar ciência, empatia e sofisticação para oferecer o melhor da dermatologia. Acredito que cada paciente é único e merece um atendimento personalizado que valorize sua saúde, autoestima e beleza natural.</p>
+                                    <p>Minha prática é guiada por um cuidado com propósito: respeitar sua individualidade, valorizar a naturalidade e fortalecer sua autoestima ao longo do tempo, porque a verdadeira beleza não vem em fórmulas prontas!</p>
                                     
-                                    <p>Me formei em Medicina pela UNICAMP e fiz minha Residência Médica em Dermatologia pela Escola Paulista de Medicina – UNIFESP, duas das mais renomadas instituições do país. Sou Membro titular da Sociedade Brasileira de Dermatologia (SBD) e me mantenho sempre atualizada com os avanços da especialidade.</p>
+                                    <p>Me formei em Medicina pela UNICAMP, e fiz minha Residência Médica em Dermatologia pela Escola Paulista de Medicina – UNIFESP. Lá, me envolvi com o tratamento do melasma, e como sou apaixonada por ciência, estou terminando meu Doutorado com foco nessa condição (as manchas que tanto impactam na qualidade de vida), também pela UNIFESP.</p>
                                     
-                                    <p>Atuo nas três áreas da dermatologia: <strong>clínica</strong>, <strong>estética</strong> e <strong>cirúrgica</strong>. Meu objetivo é oferecer cuidados completos em um ambiente acolhedor e moderno.</p>
+                                    <p>Sou Membro titular da Sociedade Brasileira de Dermatologia - SBD, e participo constantemente de congressos da Sociedade para manter minhas condutas sempre atualizadas.</p>
+
+                                    <p>Seja muito bem-vinda. Vai ser um prazer caminhar com você nessa jornada.</p>
                                 </div>
                                 
                                 <div className="text-center lg:text-left mt-10">
