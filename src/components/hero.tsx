@@ -7,11 +7,22 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative w-full overflow-hidden bg-background pt-32 pb-16 md:pt-48 md:pb-24"
+      className="relative w-full overflow-hidden bg-background pt-40 pb-24 md:pt-48 md:pb-32"
     >
-      <div className="container">
+      <div className="absolute inset-0 z-0 opacity-20 md:opacity-100">
+        <Image
+          src="/foto.jpg"
+          alt="Consultório da Dra. Ana Clara Cruz"
+          fill
+          className="object-cover"
+          style={{ objectPosition: 'top' }}
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent md:bg-gradient-to-r md:from-background md:via-background/70 md:to-transparent"></div>
+      </div>
+      
+      <div className="container relative z-10">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          {/* Coluna de Texto */}
           <div className="text-left">
             <AnimatedDiv animationClass="animate-fade-in-up" delay={0}>
               <h1 className="font-headline text-5xl md:text-6xl font-medium text-accent leading-tight">
@@ -41,21 +52,9 @@ export function Hero() {
               </div>
             </AnimatedDiv>
           </div>
-
-          {/* Coluna da Imagem */}
-          <AnimatedDiv animationClass="animate-fade-in-right" delay={200} className="relative order-first lg:order-last flex items-center justify-center">
-             <div className="relative w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] rounded-full overflow-hidden shadow-2xl border-8 border-white/50">
-               <Image 
-                 src="/foto.jpg"
-                 alt="Dra. Ana Clara Cruz"
-                 fill
-                 className="object-cover"
-                 style={{ objectPosition: 'top' }}
-                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                 priority
-               />
-             </div>
-          </AnimatedDiv>
+          
+          {/* Coluna vazia para empurrar o texto para a esquerda em telas grandes */}
+          <div className="hidden lg:block"></div>
         </div>
       </div>
     </section>
