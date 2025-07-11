@@ -10,21 +10,21 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const aestheticTreatments = [
-    { title: "Aplicação Estética de Toxina", items: ["Aplicação facial completa", "Tratamento da hiperidrose axilar", "Tratamento do bruxismo", "Hiperidrose palmar e plantar"], icon: <Bot/> },
-    { title: "Preenchimento com Ácido Hialurônico", items: ["Face", "Preenchimentos híbridos com bioestimulador", "Glúteos", "Skinbooster"], icon: <Syringe/> },
-    { title: "Bioestimuladores de Colágeno", items: ["Face, pescoço, colo e corpo"], icon: <Droplets/> },
-    { title: "Fios de PDO (lisos)", items: ["Indicação para pálpebras e glabela"], icon: <Dna/> },
-    { title: "Microagulhamento", items: ["Melasma, cicatrizes de acne, cicatrizes pós-cirúrgicas, melhora da textura da pele", "Frequentemente associado a peelings"], icon: <Wand2/> },
-    { title: "Peelings Químicos", items: ["Peelings superficiais", "Peelings médios"], icon: <Droplets/> },
-    { title: "Ultraformer", items: ["Tratamento facial completo", "Tratamentos corporais", "Protocolo específico para papada"], icon: <Bot/> },
-    { title: "Tecnologias a Laser – Plataforma Etherea", items: ["Luz Pulsada", "Nd:YAG 1064 nm (manchas, melasma)", "Nd:YAG Long Pulse (vasinhos e vermelhidão)", "Laser Ablativo Erbium"], icon: <Dna/> },
-    { title: "Tratamentos Capilares", items: ["MMP Capilar", "Mesoterapia Capilar"], icon: <HeartPulse/> },
+    { title: "Aplicação Estética de Toxina", description: "Facial completa, hiperidrose axilar, bruxismo, hiperidrose palmar e plantar.", icon: <Bot className="h-6 w-6"/> },
+    { title: "Preenchimento com Ácido Hialurônico", description: "Face, glúteos, skinbooster e preenchimentos híbridos com bioestimulador.", icon: <Syringe className="h-6 w-6"/> },
+    { title: "Bioestimuladores de Colágeno", description: "Face, pescoço, colo e corpo, para uma pele mais firme e rejuvenescida.", icon: <Droplets className="h-6 w-6"/> },
+    { title: "Fios de PDO (lisos)", description: "Indicado para a melhora da textura da pele em áreas como pálpebras e glabela.", icon: <Dna className="h-6 w-6"/> },
+    { title: "Microagulhamento", description: "Melasma, cicatrizes de acne, melhora da textura, associado a peelings.", icon: <Wand2 className="h-6 w-6"/> },
+    { title: "Peelings Químicos", description: "Superficiais e médios para renovação celular e tratamento de manchas.", icon: <Droplets className="h-6 w-6"/> },
+    { title: "Ultraformer", description: "Tratamento facial completo, corporais e protocolo para papada.", icon: <Bot className="h-6 w-6"/> },
+    { title: "Tecnologias a Laser – Plataforma Etherea", description: "Luz Pulsada, Nd:YAG para manchas e vasinhos, Laser Ablativo Erbium.", icon: <Dna className="h-6 w-6"/> },
+    { title: "Tratamentos Capilares", description: "MMP Capilar e Mesoterapia para fortalecimento e crescimento dos fios.", icon: <HeartPulse className="h-6 w-6"/> },
 ];
 
 const surgicalTreatments = [
-    { title: "Cirurgias", items: ["Retirada de câncer de pele"], icon: <Scissors/> },
-    { title: "Pequenas Cirurgias", items: ["Cistos, pequenos lipomas, queratoses seborreicas"], icon: <Scissors/> },
-    { title: "Biópsias de pele", items: [], icon: <Microscope/> },
+    { title: "Cirurgias de Câncer de Pele", description: "Remoção segura e especializada de lesões malignas.", icon: <Scissors className="h-6 w-6"/> },
+    { title: "Pequenas Cirurgias", description: "Remoção de cistos, lipomas e queratoses seborreicas.", icon: <Scissors className="h-6 w-6"/> },
+    { title: "Biópsias de Pele", description: "Análise precisa de lesões para um diagnóstico definitivo.", icon: <Microscope className="h-6 w-6"/> },
 ];
 
 const clinicalTreatments = [
@@ -40,23 +40,19 @@ const clinicalTreatments = [
     { title: "Tratamentos com imunobiológicos", icon: <HeartPulse/> },
 ];
 
-const TreatmentGroup = ({ title, treatments, animationDelay }: { title: string, treatments: { title: string; items?: string[]; icon: React.ReactNode }[], animationDelay: number }) => (
+const TreatmentGroup = ({ title, treatments, animationDelay }: { title: string, treatments: { title: string; description: string; icon: React.ReactNode }[], animationDelay: number }) => (
     <AnimatedDiv animationClass="animate-fade-in-up" delay={animationDelay}>
         <div className="mb-16">
             <h3 className="text-3xl font-bold text-accent mb-12 text-center font-headline">{title}</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
                 {treatments.map((treatment, index) => (
-                    <div key={index} className="flex items-start space-x-4">
-                        <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mt-1">
+                    <div key={index} className="flex items-start space-x-5">
+                        <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mt-1">
                             {treatment.icon}
                         </div>
                         <div>
-                            <h4 className="font-semibold text-foreground text-lg mb-2">{treatment.title}</h4>
-                            {treatment.items && treatment.items.length > 0 && (
-                                <ul className="list-disc list-inside text-muted-foreground text-sm space-y-1 marker:text-primary">
-                                    {treatment.items.map((item, i) => <li key={i}>{item}</li>)}
-                                </ul>
-                            )}
+                            <h4 className="font-semibold text-foreground text-lg mb-1">{treatment.title}</h4>
+                            <p className="text-muted-foreground text-base leading-relaxed">{treatment.description}</p>
                         </div>
                     </div>
                 ))}
@@ -75,7 +71,7 @@ const ClinicalTreatmentList = ({ title, treatments, animationDelay }: { title: s
                         <div className="flex-shrink-0 text-primary">
                             {treatment.icon}
                         </div>
-                        <p className="text-foreground text-base">{treatment.title}</p>
+                        <p className="text-foreground font-medium text-base">{treatment.title}</p>
                     </div>
                 ))}
             </div>
