@@ -10,21 +10,21 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const aestheticTreatments = [
-    { title: "Aplicação Estética de Toxina", description: "Facial completa, hiperidrose axilar, bruxismo, hiperidrose palmar e plantar.", icon: <Bot className="h-6 w-6"/> },
-    { title: "Preenchimento com Ácido Hialurônico", description: "Face, glúteos, skinbooster e preenchimentos híbridos com bioestimulador.", icon: <Syringe className="h-6 w-6"/> },
-    { title: "Bioestimuladores de Colágeno", description: "Face, pescoço, colo e corpo, para uma pele mais firme e rejuvenescida.", icon: <Droplets className="h-6 w-6"/> },
-    { title: "Fios de PDO (lisos)", description: "Indicado para a melhora da textura da pele em áreas como pálpebras e glabela.", icon: <Dna className="h-6 w-6"/> },
-    { title: "Microagulhamento", description: "Melasma, cicatrizes de acne, melhora da textura, associado a peelings.", icon: <Wand2 className="h-6 w-6"/> },
-    { title: "Peelings Químicos", description: "Superficiais e médios para renovação celular e tratamento de manchas.", icon: <Droplets className="h-6 w-6"/> },
-    { title: "Ultraformer", description: "Tratamento facial completo, corporais e protocolo para papada.", icon: <Bot className="h-6 w-6"/> },
-    { title: "Tecnologias a Laser – Plataforma Etherea", description: "Luz Pulsada, Nd:YAG para manchas e vasinhos, Laser Ablativo Erbium.", icon: <Dna className="h-6 w-6"/> },
-    { title: "Tratamentos Capilares", description: "MMP Capilar e Mesoterapia para fortalecimento e crescimento dos fios.", icon: <HeartPulse className="h-6 w-6"/> },
+    { title: "Aplicação Estética de Toxina", description: "Suavização de rugas e tratamento de condições como hiperidrose e bruxismo.", icon: <Bot className="h-6 w-6"/> },
+    { title: "Preenchimento com Ácido Hialurônico", description: "Restauração de volume, contorno facial e hidratação profunda da pele.", icon: <Syringe className="h-6 w-6"/> },
+    { title: "Bioestimuladores de Colágeno", description: "Estímulo da produção natural de colágeno para uma pele mais firme e rejuvenescida.", icon: <Droplets className="h-6 w-6"/> },
+    { title: "Fios de PDO (lisos)", description: "Melhora da textura e firmeza da pele em áreas delicadas como pálpebras e glabela.", icon: <Dna className="h-6 w-6"/> },
+    { title: "Microagulhamento", description: "Técnica para tratar melasma, cicatrizes e melhorar a textura geral da pele.", icon: <Wand2 className="h-6 w-6"/> },
+    { title: "Peelings Químicos", description: "Renovação celular controlada para uma pele mais uniforme, lisa e luminosa.", icon: <Droplets className="h-6 w-6"/> },
+    { title: "Ultraformer", description: "Tecnologia de ultrassom para lifting facial não invasivo e contorno corporal.", icon: <Bot className="h-6 w-6"/> },
+    { title: "Tecnologias a Laser – Plataforma Etherea", description: "Tratamentos avançados para manchas, vasos, melasma e rejuvenescimento.", icon: <Dna className="h-6 w-6"/> },
+    { title: "Tratamentos Capilares", description: "Protocolos para fortalecer os fios, estimular o crescimento e tratar alopécias.", icon: <HeartPulse className="h-6 w-6"/> },
 ];
 
 const surgicalTreatments = [
-    { title: "Cirurgias de Câncer de Pele", description: "Remoção segura e especializada de lesões malignas.", icon: <Scissors className="h-6 w-6"/> },
-    { title: "Pequenas Cirurgias", description: "Remoção de cistos, lipomas e queratoses seborreicas.", icon: <Scissors className="h-6 w-6"/> },
-    { title: "Biópsias de Pele", description: "Análise precisa de lesões para um diagnóstico definitivo.", icon: <Microscope className="h-6 w-6"/> },
+    { title: "Cirurgias de Câncer de Pele", description: "Remoção segura e especializada de lesões malignas com foco na saúde e estética.", icon: <Scissors className="h-6 w-6"/> },
+    { title: "Pequenas Cirurgias", description: "Extração de cistos, lipomas e outras lesões benignas com técnica apurada.", icon: <Scissors className="h-6 w-6"/> },
+    { title: "Biópsias de Pele", description: "Coleta de amostras para análise patológica, essencial para um diagnóstico preciso.", icon: <Microscope className="h-6 w-6"/> },
 ];
 
 const clinicalTreatments = [
