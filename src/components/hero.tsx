@@ -5,11 +5,27 @@ import { AnimatedDiv } from "./animated-div";
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative pt-32 pb-20 md:pt-40 md:pb-24 flex items-center bg-cream overflow-hidden">
-      <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          
-          <div className="text-left">
+    <section
+      id="inicio"
+      className="relative flex items-center overflow-hidden bg-cover bg-center bg-no-repeat pt-32 pb-20 md:pt-40 md:pb-24"
+    >
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="https://placehold.co/1920x1080.png"
+          alt="Background image of a dermatologist's office"
+          layout="fill"
+          objectFit="cover"
+          quality={80}
+          priority
+          data-ai-hint="dermatologist office"
+          className="opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/80 to-transparent"></div>
+      </div>
+      
+      <div className="container relative z-10">
+        <div className="grid grid-cols-1">
+          <div className="text-left max-w-2xl">
             <AnimatedDiv animationClass="animate-fade-in-up" delay={0}>
               <h1 className="font-headline text-5xl md:text-6xl font-medium text-accent leading-tight">
                 Dra. Ana Clara Cruz
@@ -38,34 +54,6 @@ export function Hero() {
               </div>
             </AnimatedDiv>
           </div>
-
-          <div className="relative hidden md:flex items-center justify-center h-full">
-            <AnimatedDiv animationClass="animate-luxury-zoom" delay={300} className="relative w-[450px] h-[450px]">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-48 bg-white/60 rounded-full filter blur-xl opacity-80"></div>
-                <div className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-80 h-80 bg-white/70 rounded-full filter blur-2xl opacity-90"></div>
-                
-                <Image
-                  src="https://placehold.co/400x500.png"
-                  alt="Dra. Ana Clara Cruz"
-                  width={400}
-                  height={500}
-                  quality={95}
-                  priority
-                  data-ai-hint="dermatologist portrait"
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 rounded-[50%] object-cover w-[320px] h-[400px] shadow-2xl"
-                  style={{
-                    maskImage: 'radial-gradient(circle at center, white 70%, transparent 100%)',
-                  }}
-                />
-
-                <div className="absolute bottom-0 right-0 z-20 bg-white/50 backdrop-blur-sm p-4 rounded-2xl shadow-lg w-64">
-                    <p className="font-bold text-accent text-lg">Dra. Ana Clara Cruz</p>
-                    <p className="text-muted-foreground text-sm">Dermatologista CRM-SP 123456</p>
-                    <p className="text-muted-foreground text-sm font-medium">Especialista em Melasma</p>
-                </div>
-            </AnimatedDiv>
-          </div>
-
         </div>
       </div>
     </section>
