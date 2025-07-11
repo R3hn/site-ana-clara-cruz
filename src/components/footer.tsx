@@ -4,7 +4,7 @@ export function Footer() {
             <div className="container text-center">
                 <div className="mb-8">
                     <h3 className="font-bold text-2xl font-headline mb-2">Dra. Ana Clara Cruz</h3>
-                    <p className="text-white/70 text-base">CRM-SP 123456 | Dermatologista Especialista em Melasma</p>
+                    <p className="text-white/70 text-base">CRM-SP 218.598 | RQE 125.917</p>
                 </div>
                 
                 <div className="text-white/70 space-y-3 max-w-2xl mx-auto text-sm">

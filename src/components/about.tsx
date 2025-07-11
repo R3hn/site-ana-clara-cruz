@@ -45,7 +45,8 @@ export function About() {
                                     <p className="text-2xl font-semibold text-primary font-headline">Olá, muito prazer!</p>
                                     
                                     <p><strong>Sou a Dra. Ana Clara Ladeira Cruz, médica dermatologista em São Paulo, capital.</strong></p>
-                                    
+                                    <p className="text-sm text-muted-foreground !-mt-4">CRM-SP 218.598 | RQE 125.917</p>
+
                                     <p>Minha prática é guiada por um cuidado com propósito: respeitar sua individualidade, valorizar a naturalidade e fortalecer sua autoestima ao longo do tempo, porque a verdadeira beleza não vem em fórmulas prontas!</p>
                                     
                                     <p>Me formei em Medicina pela UNICAMP, e fiz minha Residência Médica em Dermatologia pela Escola Paulista de Medicina – UNIFESP. Lá, me envolvi com o tratamento do melasma, e como sou apaixonada por ciência, estou terminando meu Doutorado com foco nessa condição (as manchas que tanto impactam na qualidade de vida), também pela UNIFESP.</p>
