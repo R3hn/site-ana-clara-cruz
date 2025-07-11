@@ -49,7 +49,7 @@ export function Header() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
           ? "bg-white/95 shadow-md backdrop-blur-sm"
-          : "bg-gradient-to-b from-background/90 via-background/70 to-transparent"
+          : "bg-gradient-to-l from-background/0 via-background/50 to-background/80"
       )}
     >
       <div className="container">
