@@ -53,6 +53,11 @@ const testimonials = [
     initials: "TM",
     text: "Cheguei na consulta com a Dra Ana e ela foi muito atenciosa. Primeiro ouviu todas as minhas queixas, fez diversas perguntas para conhecer melhor a minha rotina, os meus cuidados com a pele e o que me incomodava. Depois, ela examinou a pele do meu corpo inteiro, dos pés a cabeça literalmente. Na hora de propor o tratamento e os cuidados, ela propôs estratégias de forma muito científica e cuidadosa, entendendo qual era o meu objetivo com a consulta. Recomendo a consulta com ela tanto para quem tem alguma queixa dermatológica quanto para quem quer fazer algum procedimento estético. Fiquei muito satisfeita com os resultados que tive. E pretendo voltar em breve.",
   },
+  {
+    name: "Denise Deni",
+    initials: "DD",
+    text: "Conheço a Dra. Ana Clara e o seu trabalho há tempos e me sinto totalmente segura em ser sua paciente, pois ela me dá toda atenção necessária para fazer um diagnóstico preciso e correto. Na consulta ela examina cada detalhe do meu corpo e me ouve, o que para mim isto é muito importante. Quando conversa e explica, usa uma linguagem que é bem compreensiva, não deixando dúvidas. Adoro seu trabalho e já à recomendei para minhas amigas, que ficaram muito satisfeitas.",
+  },
 ];
 
 export function Testimonials() {
