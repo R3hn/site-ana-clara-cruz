@@ -43,12 +43,14 @@ export function Process() {
                 </AnimatedDiv>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
                     {steps.map((item, index) => (
-                        <AnimatedDiv key={item.step} animationClass="animate-fade-in-up" delay={index * 150 + 200} className="text-center transition-transform duration-300 hover:-translate-y-2">
-                            <div className="step-number bg-gradient-to-br from-primary to-primary-light text-white w-16 h-16 rounded-full flex items-center justify-center font-bold text-2xl mx-auto mb-6 shadow-lg">
-                                {item.step}
+                        <AnimatedDiv key={item.step} animationClass="animate-fade-in-up" delay={index * 150 + 200}>
+                            <div className="text-center h-full transition-transform duration-300 hover:-translate-y-2">
+                                <div className="step-number bg-gradient-to-br from-primary to-primary-light text-white w-16 h-16 rounded-full flex items-center justify-center font-bold text-2xl mx-auto mb-6 shadow-lg">
+                                    {item.step}
+                                </div>
+                                <h3 className="text-2xl font-semibold mb-4 text-foreground">{item.title}</h3>
+                                <p className="text-muted-foreground text-base leading-relaxed">{item.description}</p>
                             </div>
-                            <h3 className="text-2xl font-semibold mb-4 text-foreground">{item.title}</h3>
-                            <p className="text-muted-foreground text-base leading-relaxed">{item.description}</p>
                         </AnimatedDiv>
                     ))}
                 </div>
