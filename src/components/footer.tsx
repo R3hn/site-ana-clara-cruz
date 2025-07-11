@@ -2,8 +2,12 @@ import { Instagram, GraduationCap, MapPin } from "lucide-react";
 
 const GoogleIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M15.5 15.5L12 12l3.5-3.5" />
-        <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12s4.48 10 10 10c2.4 0 4.6-.85 6.32-2.26" />
+        <path d="M13.5 16.5L10 12l3.5-4.5" />
+        <path d="M20.2 13.8c.2-1.1.2-2.4 0-3.6" />
+        <path d="M3.8 13.8a9.9 9.9 0 0 1 0-3.6" />
+        <path d="M10.1 3a9.9 9.9 0 0 1 3.8 0" />
+        <path d="M18.8 5.2a9.9 9.9 0 0 1 0 13.6" />
+        <path d="M5.2 5.2a9.9 9.9 0 0 1 13.6 0" />
     </svg>
 )
 
