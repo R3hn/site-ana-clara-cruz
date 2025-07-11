@@ -36,67 +36,62 @@ export function About() {
                     <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">Dermatologista completa com formação de excelência e atendimento humanizado.</p>
                 </AnimatedDiv>
 
-                <AnimatedDiv animationClass="animate-fade-in-up" delay={200}>
-                    <Card className="max-w-6xl mx-auto shadow-2xl rounded-3xl p-8 md:p-12 relative overflow-hidden border-primary/10">
-                        <CardContent className="p-0">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                                <div className="order-2 lg:order-1">
-                                    <div className="text-base md:text-lg leading-relaxed text-foreground space-y-6 relative z-10">
-                                        <p className="text-2xl font-semibold text-primary font-headline">Olá, muito prazer!</p>
-                                        
-                                        <p><strong>Sou a Dra. Ana Clara Ladária Cruz, médica dermatologista em São Paulo, capital.</strong></p>
-                                        
-                                        <p>Minha prática é guiada por um cuidado com propósito: combinar ciência, empatia e sofisticação para oferecer o melhor da dermatologia. Acredito que cada paciente é único e merece um atendimento personalizado que valorize sua saúde, autoestima e beleza natural.</p>
-                                        
-                                        <p>Me formei em Medicina pela UNICAMP e fiz minha Residência Médica em Dermatologia pela Escola Paulista de Medicina – UNIFESP, duas das mais renomadas instituições do país. Sou Membro titular da Sociedade Brasileira de Dermatologia (SBD) e me mantenho sempre atualizada com os avanços da especialidade.</p>
-                                        
-                                        <p>Atuo nas três áreas da dermatologia: <strong>clínica</strong> (tratamento de doenças de pele), <strong>estética</strong> (procedimentos para rejuvenescimento e beleza) e <strong>cirúrgica</strong> (pequenas cirurgias dermatológicas). Meu objetivo é oferecer cuidados completos em um ambiente acolhedor e moderno.</p>
-                                        
-                                        <p className="text-primary font-semibold text-xl md:text-2xl italic font-headline">Seja muito bem-vinda. Será um prazer cuidar da sua pele com todo carinho e profissionalismo.</p>
-                                    </div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20 items-center max-w-6xl mx-auto">
+                    <AnimatedDiv animationClass="animate-fade-in-right" delay={400} className="order-2 lg:order-1">
+                        <Card className="shadow-2xl rounded-3xl p-8 md:p-10 relative overflow-hidden border-primary/10 bg-white/80 backdrop-blur-sm">
+                            <CardContent className="p-0">
+                                <div className="text-base md:text-lg leading-relaxed text-foreground space-y-6 relative z-10">
+                                    <p className="text-2xl font-semibold text-primary font-headline">Olá, muito prazer!</p>
                                     
-                                    <div className="text-center lg:text-left mt-12">
-                                        <Button asChild size="lg" className="rounded-full h-14 px-8 text-base bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                                            <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
-                                                <WhatsAppIcon className="h-5 w-5 mr-3" />
-                                                Quero conversar com a Dra. Ana Clara
-                                            </a>
-                                        </Button>
-                                    </div>
+                                    <p><strong>Sou a Dra. Ana Clara Ladária Cruz, médica dermatologista em São Paulo, capital.</strong></p>
+                                    
+                                    <p>Minha prática é guiada por um cuidado com propósito: combinar ciência, empatia e sofisticação para oferecer o melhor da dermatologia. Acredito que cada paciente é único e merece um atendimento personalizado que valorize sua saúde, autoestima e beleza natural.</p>
+                                    
+                                    <p>Me formei em Medicina pela UNICAMP e fiz minha Residência Médica em Dermatologia pela Escola Paulista de Medicina – UNIFESP, duas das mais renomadas instituições do país. Sou Membro titular da Sociedade Brasileira de Dermatologia (SBD) e me mantenho sempre atualizada com os avanços da especialidade.</p>
+                                    
+                                    <p>Atuo nas três áreas da dermatologia: <strong>clínica</strong>, <strong>estética</strong> e <strong>cirúrgica</strong>. Meu objetivo é oferecer cuidados completos em um ambiente acolhedor e moderno.</p>
                                 </div>
-                                <div className="order-1 lg:order-2">
-                                    <Carousel
-                                        plugins={[plugin.current]}
-                                        className="w-full max-w-md mx-auto"
-                                        onMouseEnter={plugin.current.stop}
-                                        onMouseLeave={plugin.current.reset}
-                                    >
-                                        <CarouselContent>
-                                            {carouselImages.map((img, index) => (
-                                                <CarouselItem key={index}>
-                                                    <div className="p-1">
-                                                        <Card className="rounded-2xl overflow-hidden shadow-lg">
-                                                            <CardContent className="flex aspect-[4/5] items-center justify-center p-0">
-                                                                <Image
-                                                                    src={img.src}
-                                                                    alt={img.alt}
-                                                                    width={400}
-                                                                    height={500}
-                                                                    className="object-cover w-full h-full"
-                                                                    data-ai-hint={img.hint}
-                                                                />
-                                                            </CardContent>
-                                                        </Card>
-                                                    </div>
-                                                </CarouselItem>
-                                            ))}
-                                        </CarouselContent>
-                                    </Carousel>
+                                
+                                <div className="text-center lg:text-left mt-10">
+                                    <Button asChild size="lg" className="rounded-full h-14 px-8 text-base bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                                        <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
+                                            <WhatsAppIcon className="h-5 w-5 mr-3" />
+                                            Converse com a equipe
+                                        </a>
+                                    </Button>
                                 </div>
-                            </div>
-                        </CardContent>
-                    </Card>
-                </AnimatedDiv>
+                            </CardContent>
+                        </Card>
+                    </AnimatedDiv>
+                    
+                    <AnimatedDiv animationClass="animate-fade-in-left" delay={200} className="order-1 lg:order-2">
+                        <Carousel
+                            plugins={[plugin.current]}
+                            className="w-full max-w-md mx-auto lg:max-w-none"
+                            onMouseEnter={plugin.current.stop}
+                            onMouseLeave={plugin.current.reset}
+                        >
+                            <CarouselContent>
+                                {carouselImages.map((img, index) => (
+                                    <CarouselItem key={index}>
+                                        <div className="p-1">
+                                            <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] relative">
+                                                <Image
+                                                    src={img.src}
+                                                    alt={img.alt}
+                                                    fill
+                                                    className="object-cover w-full h-full"
+                                                    data-ai-hint={img.hint}
+                                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+                                                />
+                                            </div>
+                                        </div>
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                        </Carousel>
+                    </AnimatedDiv>
+                </div>
             </div>
         </section>
     );
