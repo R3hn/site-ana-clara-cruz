@@ -54,7 +54,7 @@ export function Header() {
       <div className="container">
         <div className="flex items-center justify-between py-4">
           <Link href="#inicio" className="font-headline text-xl font-semibold text-accent">
-            <Image src="/logo.png" alt="Dra. Ana Clara Cruz Logo" width={200} height={50} priority />
+            Dra. Ana Clara Cruz
           </Link>
           <nav className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
