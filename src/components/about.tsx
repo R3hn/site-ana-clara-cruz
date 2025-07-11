@@ -15,9 +15,11 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const carouselImages = [
-    { src: "https://placehold.co/400x500.png", alt: "Retrato da Dra. Ana Clara Cruz", hint: "professional portrait" },
-    { src: "https://placehold.co/400x500.png", alt: "Dra. Ana Clara Cruz realizando procedimento", hint: "dermatologist procedure" },
-    { src: "https://placehold.co/400x500.png", alt: "Dra. Ana Clara Cruz em seu consultório", hint: "doctor office" },
+    { src: "/foto1.jpg", alt: "Retrato da Dra. Ana Clara Cruz", hint: "professional portrait" },
+    { src: "/foto2.jpg", alt: "Dra. Ana Clara Cruz em seu consultório", hint: "doctor office" },
+    { src: "/procedimento1.jpg", alt: "Dra. Ana Clara Cruz realizando procedimento dermatológico", hint: "dermatologist procedure" },
+    { src: "/procedimento2.jpg", alt: "Detalhe de um procedimento estético sendo realizado", hint: "aesthetic procedure" },
+    { src: "/procedimento3.jpg", alt: "Paciente recebendo tratamento dermatológico", hint: "patient treatment" },
 ];
 
 export function About() {
@@ -78,7 +80,6 @@ export function About() {
                                                                 <Image
                                                                     src={img.src}
                                                                     alt={img.alt}
-                                                                    data-ai-hint={img.hint}
                                                                     width={400}
                                                                     height={500}
                                                                     className="object-cover w-full h-full"
