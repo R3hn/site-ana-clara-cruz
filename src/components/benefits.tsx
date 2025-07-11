@@ -12,7 +12,7 @@ const benefitItems = [
     {
         step: 1,
         title: "Formação de Excelência",
-        description: "Graduada pela UNICAMP e com residência em Dermatologia pela UNIFESP. Membro titular da Sociedade Brasileira de Dermatologia.",
+        description: "Graduada pela UNICAMP e com residência em Dermatologia pela UNIFESP. Membra titular da Sociedade Brasileira de Dermatologia.",
         icon: <GraduationCap className="h-5 w-5" />,
         tag: "UNICAMP • UNIFESP • SBD",
         sideCard: {
@@ -101,9 +101,9 @@ export function Benefits() {
                                     Cuide da sua saúde e autoestima com tratamentos dermatológicos de excelência em um ambiente acolhedor e sofisticado.
                                 </p>
                                 <Button asChild size="lg" className="rounded-full text-base bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white font-medium h-auto py-4 px-6 md:h-14 md:px-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                                    <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://wa.link/qu3dwh" target="_blank" rel="noopener noreferrer" className="flex items-center text-center">
                                         <WhatsAppIcon className="h-5 w-5 mr-3 flex-shrink-0" />
-                                        Quero agendar minha consulta
+                                        <span>Quero agendar<br className="sm:hidden"/> minha consulta</span>
                                     </a>
                                 </Button>
                             </div>
