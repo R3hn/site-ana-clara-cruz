@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex items-center w-full min-h-[85vh] md:min-h-screen overflow-hidden bg-background md:pt-32"
+      className="relative flex items-center w-full min-h-[85vh] md:min-h-screen overflow-hidden bg-background"
     >
       {/* Desktop Image Background */}
       <div className="absolute inset-0 z-0 hidden md:block">
@@ -18,7 +18,7 @@ export function Hero() {
           className="object-cover"
           priority
           quality={100}
-          style={{ objectPosition: 'top' }}
+          style={{ objectPosition: 'center 20%' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background from-40% to-transparent to-60%"></div>
       </div>
@@ -72,7 +72,7 @@ export function Hero() {
         </div>
 
         {/* Desktop-only Text */}
-        <div className="text-center md:text-left hidden md:block">
+        <div className="text-center md:text-left hidden md:block md:pt-32">
             <AnimatedDiv animationClass="animate-fade-in-up" delay={0}>
               <h1 className="font-headline text-5xl md:text-6xl font-medium text-accent leading-tight">
                 Dra. Ana Clara Cruz
