@@ -72,7 +72,7 @@ export function Hero() {
         </div>
 
         {/* Desktop-only Text */}
-        <div className="text-center md:text-left hidden md:block md:pt-32">
+        <div className="text-center md:text-left hidden md:block">
             <AnimatedDiv animationClass="animate-fade-in-up" delay={0}>
               <h1 className="font-headline text-5xl md:text-6xl font-medium text-accent leading-tight">
                 Dra. Ana Clara Cruz
