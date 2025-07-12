@@ -18,7 +18,7 @@ export function Hero() {
           className="object-cover"
           priority
           quality={100}
-          style={{ objectPosition: 'center 38%' }}
+          style={{ objectPosition: 'center 42%' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background from-40% to-transparent to-60%"></div>
       </div>
