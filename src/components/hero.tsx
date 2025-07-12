@@ -15,9 +15,10 @@ export function Hero() {
           src="/foto.jpg"
           alt="Consultório da Dra. Ana Clara Cruz"
           fill
-          className="object-cover object-top"
+          className="object-cover"
           priority
           quality={100}
+          style={{ objectPosition: 'top' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background from-40% to-transparent to-60%"></div>
       </div>
