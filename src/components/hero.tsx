@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex items-center w-full min-h-[85vh] md:min-h-screen overflow-hidden bg-background md:pt-16"
+      className="relative flex items-center w-full min-h-[85vh] md:min-h-[calc(100vh+80px)] overflow-hidden bg-background md:pt-16"
     >
       {/* Desktop Image Background */}
       <div className="absolute inset-0 z-0 hidden md:block">
@@ -18,7 +18,7 @@ export function Hero() {
           className="object-cover"
           priority
           quality={100}
-          style={{ objectPosition: 'center 20%' }}
+          style={{ objectPosition: 'center 35%' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background from-40% to-transparent to-60%"></div>
       </div>
