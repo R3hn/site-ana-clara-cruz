@@ -15,8 +15,7 @@ export function Hero() {
           src="/foto.jpg"
           alt="Consultório da Dra. Ana Clara Cruz"
           fill
-          className="object-cover"
-          style={{ objectPosition: '80% 50%' }}
+          className="object-cover object-top"
           priority
           quality={100}
         />
