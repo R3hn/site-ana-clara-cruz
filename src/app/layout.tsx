@@ -7,7 +7,7 @@ import Script from 'next/script';
 export const metadata: Metadata = {
   title: 'Dra. Ana Clara Cruz - Especialista em Melasma | Vila Olímpia - SP',
   description: 'Tratamento especializado para melasma com a Dra. Ana Clara Cruz. Dermatologista formada pela UNICAMP. Consultas na Vila Olímpia, São Paulo.',
-  icons: '/logo1x1.png',
+  icons: '/logo1x1.png?v=2',
   openGraph: {
     title: 'Dra. Ana Clara Cruz - Especialista em Melasma',
     description: 'Cuidados dermatológicos completos com foco na sua saúde, autoestima e beleza natural. Atendimento humanizado na Vila Olímpia.',
