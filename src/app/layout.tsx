@@ -11,7 +11,12 @@ export const metadata: Metadata = {
     title: 'Dra. Ana Clara Cruz - Especialista em Melasma',
     description: 'Cuidados dermatológicos completos com foco na sua saúde, autoestima e beleza natural. Atendimento humanizado na Vila Olímpia.',
     images: ['/og-image.png']
-  }
+  },
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
 };
 
 export default function RootLayout({
